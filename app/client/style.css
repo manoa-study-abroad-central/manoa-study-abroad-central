@@ -26,3 +26,27 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
+landing-subtitle {
+  font-size: 23px;
+}
+
+landing-description {
+  text-align: center;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+.logos {
+  height: 100px;
+  width: 400px;
+  margin-left:50px;
+}
+.landing-image {
+  height: 300px;
+  width: 675px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  align-content: center;
+}
+
