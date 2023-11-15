@@ -1,3 +1,4 @@
-[![ci-meteor-application-template-react](https://github.com/ics-software-engineering/meteor-application-template-react/actions/workflows/ci.yml/badge.svg)](https://github.com/ics-software-engineering/meteor-application-template-react/actions/workflows/ci.yml)
+# Manoa Study Abroad Central 
 
-For details, please see http://ics-software-engineering.github.io/meteor-application-template-react/
+About [Manoa Study Abroad Central] (https://manoa-study-abroad-central.github.io/)
+
