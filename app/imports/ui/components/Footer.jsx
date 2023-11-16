@@ -15,21 +15,6 @@ const Footer = () => (
           Template Home
           Page
         </a>
-        <br />
-        Original Sites:
-        {' '}
-        <br />
-        <a href="https://manoa.hawaii.edu/mix/">
-          Manoa International Exchange
-        </a>
-        {', '}
-        <a href="https://www.studyabroad.hawaii.edu/">
-          Study Abroad Center
-        </a>
-        {', '}
-        <a href="https://nse.org/">
-          National Student Exchange
-        </a>
       </Col>
     </Container>
   </footer>
