@@ -20,13 +20,16 @@ const Landing = () => (
     </Row>
     <Row>
       <Col>
-        <Image className="logos" src="../images/mix-logo.png" />
+        {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
+        <a href="https://manoa.hawaii.edu/mix/"><Image className="logos" src="../images/mix-logo.png" /></a>
       </Col>
       <Col>
-        <Image className="logos" src="../images/nse-logo.png" />
+        {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
+        <a href="https://nse.org/"><Image className="logos" src="../images/nse-logo.png" /></a>
       </Col>
       <Col>
-        <Image className="logos" src="../images/sac-logo.png" />
+        {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
+        <a href="https://www.studyabroad.hawaii.edu/"><Image className="logos" src="../images/sac-logo.png" /></a>
       </Col>
     </Row>
   </Container>
