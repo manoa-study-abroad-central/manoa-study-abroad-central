@@ -1,22 +1,16 @@
-// StuffMethods.js
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
-import Stuff from './Stuff.js'; // Importing the Stuff collection
+import Stuff from './Stuff.js';
 
 Meteor.methods({
+  // Inserts a new post with title and description into the Stuff collection
   'stuff.insert'(stuffData) {
-    // Perform checks to ensure the correct data types are being received
-    check(stuffData, {
-      title: String,
-      description: String,
-    });
+    check(stuffData, { title: String, description: String });
 
-    // Check that the user is logged in before inserting a document
-    if (!this.userId) {
-      throw new Meteor.Error('not-authorized');
-    }
+    // Authorization check: ensure user is logged in
+    if (!this.userId) throw new Meteor.Error('not-authorized');
 
-    // Insert the document into the Stuff collection
+    // Insert post with additional data
     Stuff.insert({
       ...stuffData,
       createdAt: new Date(), // Set the current date and time
@@ -24,16 +18,19 @@ Meteor.methods({
     });
   },
 
+  // Removes a post from the Stuff collection, ensuring user ownership
   'stuff.remove'(stuffId) {
     check(stuffId, String);
 
-    // Check that the user is logged in and the document belongs to the user
+    // Retrieve the post to confirm ownership.
     const stuff = Stuff.findOne(stuffId);
+
+    // Authorization check: user must be logged in and owner of the post.
     if (!this.userId || stuff.ownerId !== this.userId) {
       throw new Meteor.Error('not-authorized');
     }
 
-    // Remove the document from the Stuff collection
+    // Remove the post from the Stuff collection
     Stuff.remove(stuffId);
   },
 });
