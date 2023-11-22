@@ -52,7 +52,7 @@ const AddPosts = () => {
                 <TextField name="title" />
                 <TextField name="name" />
                 <SelectField name="program" />
-                <Form.Control as="textarea" rows={3} placeholder="Enter body" name="description" />
+                <TextField name="description" />
                 <SubmitField value="Submit" />
                 <ErrorsField />
               </Card.Body>
