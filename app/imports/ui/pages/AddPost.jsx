@@ -1,102 +1,68 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
+import React from 'react';
+import { Card, Col, Container, Row } from 'react-bootstrap';
+import { AutoForm, ErrorsField, SelectField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
+import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
+import SimpleSchema from 'simpl-schema';
+import { Posts } from '../../api/post/Post';
 
 // Component for adding new posts to the database
-const AddPost = () => {
-  // States for storing user inputs from the post
-  const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
-  const [privacy, setPrivacy] = useState('Public'); // Default privacy setting
-  // States for handling feedback messages post submission
-  const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
+const formSchema = new SimpleSchema({
+  title: String,
+  description: String,
+  program: {
+    type: String,
+    allowedValues: ['Manoa International Exchange (MIX)', 'Study Abroad Center', 'National Student Exchange (NSE)'],
+    defaultValue: 'Manoa International Exchange (MIX)',
+  },
+  name: String,
+});
 
-  // Function to handle the post submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Reset feedback messages
-    setError('');
-    setSuccess('');
+const bridge = new SimpleSchema2Bridge(formSchema);
 
-    // Call the Stuff method to insert the post into the 'Stuff' collection
-    Meteor.call('stuff.insert', { title, body, privacy }, (err) => {
-      if (err) {
-        // Update the error state to display the error message
-        setError('Error submitting post. See console for details.');
-      } else {
-        // Update the success state to display the success message
-        setSuccess('Post submitted successfully!');
-        // Clear the post fields after successful submission
-        setTitle('');
-        setBody('');
-        setPrivacy('Public');
-      }
-    });
+/* Renders the AddStuff page for adding a document. */
+const AddPosts = () => {
+
+  // On submit, insert the data.
+  const submit = (data, formRef) => {
+    const { title, program, description, name } = data;
+    const owner = Meteor.user().username;
+    Posts.collection.insert(
+      { title, program, description, name, owner },
+      (error) => {
+        if (error) {
+          swal('Error', error.message, 'error');
+        } else {
+          swal('Success', 'Item added successfully', 'success');
+          formRef.reset();
+        }
+      },
+    );
   };
 
+  let fRef = null;
   return (
-    <Container>
-      <Row className="justify-content-md-center">
-        <Col md={8}>
-          <h2>Add Post Page</h2>
-          {/* Error message */}
-          {error && <Alert variant="danger">{error}</Alert>}
-          {/* Success message */}
-          {success && <Alert variant="success">{success}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            {/* Title */}
-            <Form.Group as={Row} className="mb-3">
-              <Form.Label column sm={2}>Title:</Form.Label>
-              <Col sm={10}>
-                <Form.Control
-                  type="text"
-                  placeholder="Enter title"
-                  value={title}
-                  onChange={e => setTitle(e.target.value)}
-                />
-              </Col>
-            </Form.Group>
-
-            {/* Body */}
-            <Form.Group as={Row} className="mb-3">
-              <Form.Label column sm={2}>Body:</Form.Label>
-              <Col sm={10}>
-                <Form.Control
-                  as="textarea"
-                  rows={3}
-                  placeholder="Enter body"
-                  value={body}
-                  onChange={e => setBody(e.target.value)}
-                />
-              </Col>
-            </Form.Group>
-
-            {/* Privacy */}
-            <Form.Group as={Row} className="mb-3">
-              <Form.Label column sm={2}>Privacy Options:</Form.Label>
-              <Col sm={10}>
-                <Form.Select
-                  value={privacy}
-                  onChange={e => setPrivacy(e.target.value)}
-                >
-                  <option>Public</option>
-                  <option>Private</option>
-                </Form.Select>
-              </Col>
-            </Form.Group>
-
-            {/* Submit Button */}
-            <Row className="justify-content-center">
-              <Col md={12} className="text-center">
-                <Button type="submit" variant="primary">Submit</Button>
-              </Col>
-            </Row>
-          </Form>
+    <Container className="py-3">
+      <Row className="justify-content-center">
+        <Col xs={5}>
+          <Col className="text-center"><h2>Add Posts Here</h2></Col>
+          <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
+            <Card>
+              <Card.Body>
+                <TextField name="title" />
+                <TextField name="name" />
+                <SelectField name="program" />
+                <TextField name="description" />
+                <SubmitField value="Submit" />
+                <ErrorsField />
+              </Card.Body>
+            </Card>
+          </AutoForm>
         </Col>
       </Row>
     </Container>
   );
 };
 
-export default AddPost;
+export default AddPosts;
