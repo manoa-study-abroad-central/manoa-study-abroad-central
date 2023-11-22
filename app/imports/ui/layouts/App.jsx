@@ -6,7 +6,7 @@ import { Roles } from 'meteor/alanning:roles';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
-import ListPostUser from '../pages/ListPostUser';
+import ListStuff from '../pages/ListStuff';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddStuff from '../pages/AddStuff';
 import AddPost from '../pages/AddPost';
@@ -21,6 +21,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import ListPostAdmin from '../pages/ListPostAdmin';
 import Programs from '../pages/Programs';
 import HomePageAdmin from '../pages/HomePageAdmin';
+import ListPostUser from '../pages/ListPostUser';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/signout" element={<SignOut />} />
           <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
           <Route path="/list" element={<ProtectedRoute><ListPostUser /></ProtectedRoute>} />
+          <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/Programs" element={<ProtectedRoute><Programs /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
           <Route path="/add-post" element={<ProtectedRoute><AddPost /></ProtectedRoute>} />
