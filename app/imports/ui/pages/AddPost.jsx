@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Form, Row } from 'react-bootstrap';
 import { AutoForm, ErrorsField, SelectField, SubmitField, TextField } from 'uniforms-bootstrap5';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
@@ -40,7 +40,6 @@ const AddPosts = () => {
       },
     );
   };
-
   let fRef = null;
   return (
     <Container className="py-3">
@@ -53,7 +52,7 @@ const AddPosts = () => {
                 <TextField name="title" />
                 <TextField name="name" />
                 <SelectField name="program" />
-                <TextField name="description" />
+                <Form.Control as="textarea" rows={3} placeholder="Enter body" name="description" />
                 <SubmitField value="Submit" />
                 <ErrorsField />
               </Card.Body>
