@@ -49,10 +49,10 @@ const AddPosts = () => {
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
             <Card>
               <Card.Body>
-                <TextField name="title" />
-                <TextField name="name" />
+                <TextField name="title" placeholder="Enter title" />
+                <TextField name="name" placeholder="Enter name" />
                 <SelectField name="program" />
-                <LongTextField name="description" />
+                <LongTextField name="description" placeholder="Enter description" />
                 <SubmitField value="Submit" />
                 <ErrorsField />
               </Card.Body>
