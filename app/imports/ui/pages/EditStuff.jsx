@@ -32,8 +32,8 @@ const EditStuff = () => {
   // console.log('EditStuff', doc, ready);
   // On successful submit, insert the data.
   const submit = (data) => {
-    const { title, program, description, name } = data;
-    Posts.collection.update(_id, { $set: { title, program, description, name } }, (error) => (error ?
+    const { title, program, description, countryRegion, name } = data;
+    Posts.collection.update(_id, { $set: { title, program, description, countryRegion, name } }, (error) => (error ?
       swal('Error', error.message, 'error') :
       swal('Success', 'Item updated successfully', 'success')));
   };
@@ -46,11 +46,11 @@ const EditStuff = () => {
           <AutoForm schema={bridge} onSubmit={data => submit(data)} model={doc}>
             <Card>
               <Card.Body>
-                <TextField name="title" placeholder="Enter title" />
-                <TextField name="name" placeholder="Enter name" />
+                <TextField name="title" />
+                <TextField name="name" />
                 <SelectField name="program" />
                 <SelectField name="countryRegion" />
-                <LongTextField name="description" placeholder="Enter description" />
+                <LongTextField name="description" />
                 <SubmitField value="Submit" />
                 <ErrorsField />
                 <HiddenField name="owner" />
