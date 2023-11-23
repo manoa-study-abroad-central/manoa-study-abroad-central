@@ -19,7 +19,7 @@ const PostAdmin = ({ post, collection }) => {
       <Row>
         <Col>
           <Card className="w-100">
-            <Card.Header as="h5">Title: {post.title}</Card.Header>
+            <Card.Header as="h4">{post.title}</Card.Header>
             <Card.Body>
               <Row>
                 <Col md={2}>
@@ -28,9 +28,10 @@ const PostAdmin = ({ post, collection }) => {
                   <Card.Text className="ms-4">By {post.name}</Card.Text>
                 </Col>
                 <Col md={10}>
-                  <Card.Text>Quantity: {post.program}</Card.Text>
-                  <Card.Text>Condition: {post.description}</Card.Text>
-                  <Card.Text>Owner: {post.owner}</Card.Text>
+                  <Card.Text><strong>Program:</strong> {post.program}</Card.Text>
+                  <Card.Text><strong>Country/Region:</strong> {post.countryRegion}</Card.Text>
+                  <Card.Text>{post.description}</Card.Text>
+                  <Card.Text><strong>Owner:</strong> {post.owner}</Card.Text>
                   <Button variant="danger" id="white" onClick={() => removeItem(post._id)}>Remove</Button>
                 </Col>
               </Row>
@@ -58,6 +59,7 @@ PostAdmin.propTypes = {
     owner: PropTypes.string,
     isFlagged: PropTypes.bool,
     name: PropTypes.string,
+    countryRegion: PropTypes.string,
   }).isRequired,
   // eslint-disable-next-line react/forbid-prop-types
   collection: PropTypes.object.isRequired,

@@ -17,6 +17,12 @@ const formSchema = new SimpleSchema({
     defaultValue: 'Manoa International Exchange (MIX)',
   },
   name: String,
+  countryRegion: {
+    type: String,
+    // eslint-disable-next-line max-len
+    allowedValues: ['Australia', 'Canada', 'China', 'Czech Republic', 'Denmark', 'Fiji', 'Finland', 'France', 'French Polynesia', 'Germany', 'Hong Kong', 'Indonesia', 'Italy', 'Japan', 'Korea', 'Malaysia', 'Morocco', 'Netherlands', 'New Zealand', 'Norway', 'Philippines', 'Singapore', 'Spain', 'Sweden', 'Switzerland', 'Taiwan', 'Thailand', 'United Kingdom'],
+    defaultValue: 'Australia',
+  },
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
@@ -52,6 +58,7 @@ const AddPosts = () => {
                 <TextField name="title" placeholder="Enter title" />
                 <TextField name="name" placeholder="Enter name" />
                 <SelectField name="program" />
+                <SelectField name="countryRegion" />
                 <LongTextField name="description" placeholder="Enter description" />
                 <SubmitField value="Submit" />
                 <ErrorsField />
