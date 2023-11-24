@@ -56,10 +56,10 @@ const AddPost = () => {
 
   // On submit, insert the data.
   const submit = (data, formRef) => {
-    const { title, program, description, name } = data;
+    const { title, program, description, name, countryRegion } = data;
     const owner = Meteor.user().username;
     Posts.collection.insert(
-      { title, program, description, name, owner },
+      { title, program, description, name, owner, countryRegion },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
