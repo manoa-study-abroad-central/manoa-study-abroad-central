@@ -22,6 +22,7 @@ import ListPostAdmin from '../pages/ListPostAdmin';
 import Programs from '../pages/Programs';
 import HomePageAdmin from '../pages/HomePageAdmin';
 import ListPostUser from '../pages/ListPostUser';
+import StudyAbroadCenter from '../pages/StudyAbroadCenter';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -44,6 +45,7 @@ const App = () => {
           <Route path="/list" element={<ProtectedRoute><ListPostUser /></ProtectedRoute>} />
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/Programs" element={<ProtectedRoute><Programs /></ProtectedRoute>} />
+          <Route path="/StudyAbroadCenter" element={<ProtectedRoute><StudyAbroadCenter /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
           <Route path="/add-post" element={<ProtectedRoute><AddPost /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
