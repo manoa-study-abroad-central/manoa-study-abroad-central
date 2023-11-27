@@ -12,7 +12,7 @@
   ],
 
   "defaultPrograms": [
-    { "program": "program", "school": "school", "country": "country", "region": "region", "description": "description", "image": "image"}
+    { "program": "program", "school": "school", "country": "country", "region": "region", "description": "description", "image": "image", "site":  "site", "url":  "url"}
     ],
 
   "defaultPost": [
