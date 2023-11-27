@@ -43,3 +43,7 @@ Meteor.publish(null, function () {
   }
   return this.ready();
 });
+// eslint-disable-next-line meteor/audit-argument-checks
+Meteor.publish('posts.byCountry', function (countryName) {
+  return Posts.collection.find({ countryRegion: countryName });
+});

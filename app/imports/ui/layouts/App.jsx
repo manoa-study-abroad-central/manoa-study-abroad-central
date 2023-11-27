@@ -25,6 +25,7 @@ import ListPostUser from '../pages/ListPostUser';
 import StudyAbroadCenter from '../pages/StudyAbroadCenter';
 import ListPrograms from '../pages/ListPrograms';
 import NationalStudentExchange from '../pages/NationalStudentExchange';
+import CountrySpecific from '../pages/CountrySpecific';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -58,6 +59,7 @@ const App = () => {
           <Route path="/adminhome" element={<AdminProtectedRoute ready={ready}><HomePageAdmin /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/list/country/:countryName" element={<ProtectedRoute><CountrySpecific /></ProtectedRoute>} />
         </Routes>
         <Footer />
       </div>

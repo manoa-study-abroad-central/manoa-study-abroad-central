@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 // eslint-disable-next-line max-len
@@ -7,33 +8,56 @@ const programs = ['Manoa International Exchange (MIX)', 'Study Abroad Center', '
 
 const Programs = () => {
 
-  const [selected, setSelected] = React.useState('');
+  const [categorySelected, setCategorySelected] = useState('');
+  const [optionSelected, setOptionSelected] = useState('');
+  const navigate = useNavigate();
   const changeSelectionOption = (event) => {
-    setSelected(event.target.value);
+    const newCategory = event.target.value;
+    setCategorySelected(newCategory);
+
+    if (newCategory === 'Program') {
+      setOptionSelected(programs[0]);
+    } else if (newCategory === 'Country/Region') {
+      setOptionSelected(countries[0]);
+    }
   };
 
-  let type = null;
+  const handleOptionChange = (event) => {
+    setOptionSelected(event.target.value);
+  };
+
+  const handleSearch = () => {
+    if (categorySelected === 'Program') {
+      if (optionSelected === 'Study Abroad Center') {
+        navigate('/StudyAbroadCenter');
+      } else if (optionSelected === 'Manoa International Exchange (MIX)') {
+        // TODO: navigate to MIX page
+        navigate('/MIX');
+      } else if (optionSelected === 'National Student Exchange (NSE)') {
+        // TODO: navigate to NSE page
+        navigate('/NationalStudentExchange');
+
+      }
+    }
+    if (categorySelected === 'Country/Region') {
+      navigate(`/list/country/${optionSelected}`);
+    }
+  };
+
   let options = null;
   let title = '';
-  if (selected === 'Select') {
-    type = null;
-  } else if (selected === 'Program') {
-    type = programs;
+  if (categorySelected === 'Program') {
+    options = programs.map((el) => <option key={el}>{el}</option>);
     title = 'Select Program';
-  } else if (selected === 'Country/Region') {
-    type = countries;
+  } else if (categorySelected === 'Country/Region') {
+    options = countries.map((el) => <option key={el}>{el}</option>);
     title = 'Select Country/Region';
   }
-
-  if (type) {
-    options = type.map((el) => <option key={el}>{el}</option>);
-  }
-
   return (
     <Container className="py-3">
       <Row className="justify-content-center">
         <Col xs={12} md={4}>
-          <h2 className="text-center" style={{ fontFamily: 'Roboto', fontweight: '300px', fontSize: '35px' }}>Program Selection Page </h2>
+          <h2 className="text-center" style={{ fontFamily: 'Roboto', fontWeight: '500', fontSize: '35px' }}>Program Selection Page</h2>
           <Card style={{ borderRadius: '40px', borderWidth: '3px', borderColor: '#000', width: '425px' }}>
             <Card.Body>
               <h3 className="text-center" style={{ fontWeight: 'bold' }}>Program Selection</h3>
@@ -45,15 +69,13 @@ const Programs = () => {
                 <option>Country/Region</option>
               </select>
               <div style={{ paddingBottom: '60px' }} />
-              <h4>{ title }</h4>
-              <select style={{ width: '375px', height: '40px' }}>
-                {
-                  options
-                }
+              <h4>{title}</h4>
+              <select style={{ width: '375px', height: '40px' }} value={optionSelected} onChange={handleOptionChange}>
+                {options}
               </select>
               <div style={{ paddingBottom: '40px' }} />
               <div className="d-flex justify-content-center">
-                <button type="submit" className="btn mt-2" style={{ backgroundColor: 'white', color: 'black', borderColor: 'black', borderWidth: '3px', fontWeight: 'bold' }}>
+                <button type="submit" className="btn mt-2" style={{ backgroundColor: 'white', color: 'black', borderColor: 'black', borderWidth: '3px', fontWeight: 'bold' }} onClick={handleSearch}>
                   Search
                 </button>
               </div>
