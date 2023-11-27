@@ -29,7 +29,7 @@ class ProgramsCollection {
 }
 
 /**
- * The singleton instance of the StuffsCollection.
+ * The singleton instance of the ProgramsCollection.
  * @type {ProgramsCollection}
  */
 export const Programs = new ProgramsCollection();

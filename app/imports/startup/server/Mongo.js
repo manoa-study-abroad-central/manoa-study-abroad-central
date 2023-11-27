@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Programs } from '../../api/program/Program';
 import { Stuffs } from '../../api/stuff/Stuff';
-//import { Stuffs } from '../../api/stuff/Stuff.js';
+// import { Stuffs } from '../../api/stuff/Stuff.js';
 import { Posts } from '../../api/post/Post.js';
 
 /* eslint-disable no-console */
