@@ -24,6 +24,7 @@ import HomePageAdmin from '../pages/HomePageAdmin';
 import ListPostUser from '../pages/ListPostUser';
 import StudyAbroadCenter from '../pages/StudyAbroadCenter';
 import ListPrograms from '../pages/ListPrograms';
+import NationalStudentExchange from '../pages/NationalStudentExchange';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="/Programs" element={<ProtectedRoute><Programs /></ProtectedRoute>} />
           <Route path="/ListPrograms" element={<ProtectedRoute><ListPrograms /></ProtectedRoute>} />
           <Route path="/StudyAbroadCenter" element={<ProtectedRoute><StudyAbroadCenter /></ProtectedRoute>} />
+          <Route path="/NationalStudentExchange" element={<ProtectedRoute><NationalStudentExchange /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
           <Route path="/add-post" element={<ProtectedRoute><AddPost /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
