@@ -24,7 +24,7 @@ const ListPostUser = () => {
     };
   }, []);
   return (ready ? (
-    <Container className="py-3">
+    <Container className="py-3" id="user-post-page">
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">
