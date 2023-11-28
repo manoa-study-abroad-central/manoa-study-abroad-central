@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Meteor } from 'meteor/meteor';
 
 /* A simple static component to render some text for the landing page. */
 const HomePageAdmin = () => (
@@ -35,7 +36,7 @@ const HomePageAdmin = () => (
           <h4>This website has 0 visits in the past 10 days</h4>
         </Row>
         <Row className="py-3">
-          <h4>There are 2 registered users</h4>
+          <h4>There are {Meteor.users.find().count()} registered users</h4>
         </Row>
         <Row className="py-3">
           <h4>There are currently 0 study abroad programs in the database</h4>

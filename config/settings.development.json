@@ -9,5 +9,16 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultPrograms": [
+    { "program": "program", "school": "school", "country": "country", "region": "region", "description": "description", "image": "image", "site":  "site", "url":  "url"}
+    ],
+
+  "defaultPost": [
+    { "title":  "Bonjour from Paris! \uD83E\uDD56\uD83C\uDDEB\uD83C\uDDF7", "description":  "As the plane touched down at Charles de Gaulle Airport, I couldn't help but feel a rush of excitement and anticipation. My study abroad adventure in France was about to begin, and I was ready to embrace every opportunity for learning, cultural immersion, and personal growth. One of the main reasons I chose France was its rich academic history and prestigious institutions. I enrolled in a captivating program at Sorbonne University, where each lecture felt like a journey through centuries of art, literature, and philosophy. The academic environment fostered critical thinking and a deep appreciation for the subjects. Living in the heart of Paris offered more than just academic pursuits. Every weekend was a new chapter of exploration. From the Louvre to the charming streets of Montmartre, I immersed myself in the vibrant French culture. Conversations at local cafés became my language lessons, and each interaction was a chance to enhance my language skills. Studying abroad in France wasn't just about academics; it was a transformative experience. Navigating a new city, adapting to a different lifestyle, and overcoming challenges enhanced my resilience and independence. I returned home not just with a degree but with a newfound sense of confidence.", "owner": "john@foo.com", "program":  "National Student Exchange (NSE)", "name": "John",
+      "countryRegion": "France"
+    }
   ]
 }
+

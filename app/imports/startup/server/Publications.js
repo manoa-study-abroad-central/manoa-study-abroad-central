@@ -1,22 +1,36 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
-import { Stuffs } from '../../api/stuff/Stuff';
+import { Programs } from '../../api/program/Program';
+import { Posts } from '../../api/post/Post';
 
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise, publish nothing.
-Meteor.publish(Stuffs.userPublicationName, function () {
+Meteor.publish(Programs.userPublicationName, function () {
   if (this.userId) {
-    const username = Meteor.users.findOne(this.userId).username;
-    return Stuffs.collection.find({ owner: username });
+    return Programs.collection.find({});
+  }
+  return this.ready();
+});
+
+Meteor.publish(Posts.userPublicationName, function () {
+  if (this.userId) {
+    return Posts.collection.find();
   }
   return this.ready();
 });
 
 // Admin-level publication.
 // If logged in and with admin role, then publish all documents from all users. Otherwise, publish nothing.
-Meteor.publish(Stuffs.adminPublicationName, function () {
+Meteor.publish(Programs.adminPublicationName, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
-    return Stuffs.collection.find();
+    return Programs.collection.find();
+  }
+  return this.ready();
+});
+
+Meteor.publish(Posts.adminPublicationName, function () {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return Posts.collection.find();
   }
   return this.ready();
 });
@@ -28,4 +42,8 @@ Meteor.publish(null, function () {
     return Meteor.roleAssignment.find({ 'user._id': this.userId });
   }
   return this.ready();
+});
+// eslint-disable-next-line meteor/audit-argument-checks
+Meteor.publish('posts.byCountry', function (countryName) {
+  return Posts.collection.find({ countryRegion: countryName });
 });
