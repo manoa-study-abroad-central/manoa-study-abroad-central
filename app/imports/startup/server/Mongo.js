@@ -21,17 +21,18 @@ if (Stuffs.collection.find().count() === 0) {
 }
 
 const addPrograms = (program) => {
-  console.log(`  Adding: ${program.lastName} (${program.owner})`);
+  console.log(`  Adding: ${program.school} (${program.country})`);
   Programs.collection.insert(program);
 };
 
-// Initialize the StuffsCollection if empty.
+// Initialize the ProgramsCollection if empty.
 if (Programs.collection.find().count() === 0) {
-  if (Meteor.settings.defaultContacts) {
-    console.log('Creating default contacts.');
+  if (Meteor.settings.defaultPrograms) {
+    console.log('Creating default programs.');
     Meteor.settings.defaultPrograms.forEach(program => addPrograms(program));
   }
 }
+// console.log('find fetch', Programs.collection.find({}).fetch());
 const addPost = (post) => {
   console.log(` Adding: ${post.title} (${post.owner})`);
   Posts.collection.insert(post);

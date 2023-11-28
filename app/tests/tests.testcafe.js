@@ -8,8 +8,8 @@ import { adminHomePage } from './homePageAdmin.page';
 import { programsPage } from './programs.page';
 import { nationalStudentExchangePage } from './nationalStudentExchange.page';
 import { studyAbroadCenterPage } from './studyAbroadCenter.page';
-
-// import { listPostUserPage } from './listPostUser.page';
+import { listUserPost } from './listuserpost.page';
+import { listAdminPost } from './listadminpost.page';
 
 /* global fixture:false, test:false */
 
@@ -93,4 +93,19 @@ test('Test National Student Exchange page availability', async (testController) 
 test('Test Study Abroad Center page availability', async (testController) => {
   await testController.navigateTo('/study-abroad-center'); // Replace with the correct route
   await studyAbroadCenterPage.isDisplayed(testController);
+
+test('Test the User Post page', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.gotoUserPost(testController);
+  await listUserPost.isDisplayed(testController);
+  await listUserPost.hasTable(testController);
+});
+
+test('Test the Admin Post page', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, adminCredentials.username, adminCredentials.password);
+  await navBar.gotoAdminPost(testController);
+  await listAdminPost.isDisplayed(testController);
+  await listAdminPost.hasTable(testController);
 });
