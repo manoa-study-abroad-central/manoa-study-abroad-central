@@ -25,6 +25,7 @@ import ListPostUser from '../pages/ListPostUser';
 import StudyAbroadCenter from '../pages/StudyAbroadCenter';
 import ListPrograms from '../pages/ListPrograms';
 import NationalStudentExchange from '../pages/NationalStudentExchange';
+import MIX from '../pages/MIX';
 import CountrySpecific from '../pages/CountrySpecific';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="/list" element={<ProtectedRoute><ListPostUser /></ProtectedRoute>} />
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/Programs" element={<ProtectedRoute><Programs /></ProtectedRoute>} />
+          <Route -create-mix-pagepath="/MIX" element={<ProtectedRoute><MIX /></ProtectedRoute>} />
           <Route path="/ListPrograms" element={<ProtectedRoute><ListPrograms /></ProtectedRoute>} />
           <Route path="/StudyAbroadCenter" element={<ProtectedRoute><StudyAbroadCenter /></ProtectedRoute>} />
           <Route path="/NationalStudentExchange" element={<ProtectedRoute><NationalStudentExchange /></ProtectedRoute>} />
