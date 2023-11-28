@@ -68,6 +68,18 @@ class NavBar {
   async gotoListPostUserPage(testController) {
     await testController.click('#testimonials-nav');
   }
+
+  async gotoUserPost(testController) {
+    await testController.click('#testimonials-nav');
+  }
+
+  async gotoAdminPost(testController) {
+    await testController.click('#admin-post-nav');
+  }
+
+  async gotoListProgramsPage(testController) {
+    await testController.click('#list-programs-nav');
+  }
 }
 
 export const navBar = new NavBar();

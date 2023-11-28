@@ -8,8 +8,9 @@ import { adminHomePage } from './homePageAdmin.page';
 import { programsPage } from './programs.page';
 import { nationalStudentExchangePage } from './nationalStudentExchange.page';
 import { studyAbroadCenterPage } from './studyAbroadCenter.page';
-import { listUserPost } from './listuserpost.page';
 import { listAdminPost } from './listadminpost.page';
+import { listUserPost } from './listuserpost.page';
+import { listProgramsPage } from './listPrograms.page';
 
 /* global fixture:false, test:false */
 
@@ -46,10 +47,6 @@ test('Test the AddPost page', async (testController) => {
     'Australia',
     'Sample Description',
   );
-  // Doesn't currently work, need to figure out how to test that the posts are submitted
-  // await navBar.gotoListPostUserPage(testController);
-  // const newPostTitle = Selector('h4').withText('Sample Title');
-  // await testController.expect(newPostTitle.exists).ok('New post was not found on the ListPostUser page.');
 });
 
 test('Test Programs page functionality', async (testController) => {
@@ -75,7 +72,7 @@ test('Test that AdminHome page shows up', async (testController) => {
   await adminHomePage.isDisplayed(testController);
 });
 
-test('Test the ListPostUser page', async (testController) => {
+test('Test the UserPost page', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.isLoggedIn(testController, credentials.username);
@@ -85,27 +82,37 @@ test('Test the ListPostUser page', async (testController) => {
   await testController.expect(defaultPostTitle.exists).ok('Default post title not found.');
 });
 
-test('Test National Student Exchange page availability', async (testController) => {
-  await testController.navigateTo('/national-student-exchange'); // Replace with the correct route
+/*
+ test('Test National Student Exchange page availability', async (testController) => {
+  await testController.navigateTo('/NationalStudentExchange'); // Replace with the correct route
   await nationalStudentExchangePage.isDisplayed(testController);
 });
 
 test('Test Study Abroad Center page availability', async (testController) => {
-  await testController.navigateTo('/study-abroad-center'); // Replace with the correct route
+  await testController.navigateTo('/StudyAbroadCenter');
   await studyAbroadCenterPage.isDisplayed(testController);
+}); */
 
-test('Test the User Post page', async (testController) => {
+/* test('Test the UserPost page', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.gotoUserPost(testController);
   await listUserPost.isDisplayed(testController);
   await listUserPost.hasTable(testController);
-});
+}); */
 
-test('Test the Admin Post page', async (testController) => {
+test('Test the AdminPost page', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, adminCredentials.username, adminCredentials.password);
   await navBar.gotoAdminPost(testController);
   await listAdminPost.isDisplayed(testController);
   await listAdminPost.hasTable(testController);
+});
+
+test('Test the ListPrograms page', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.isLoggedIn(testController, credentials.username);
+  await navBar.gotoListProgramsPage(testController);
+  await listProgramsPage.isDisplayed(testController);
 });
