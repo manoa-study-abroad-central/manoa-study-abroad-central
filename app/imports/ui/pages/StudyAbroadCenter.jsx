@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 const StudyAbroadCenter = () => (
-  <Container fluid="md" className="my-5">
+  <Container id="study-abroad-center-page" fluid="md" className="my-5">
     <Row className="align-items-center">
       <Col md={6}>
         <h1>STUDY ABROAD CENTER</h1>

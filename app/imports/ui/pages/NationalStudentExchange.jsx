@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 const NationalStudentExchange = () => (
-  <Container fluid="md" className="my-5">
+  <Container id="national-student-exchange-page" fluid="md" className="my-5">
     <Row className="align-items-center">
       <Col md={6}>
         <h1>National Student Exchange</h1>
