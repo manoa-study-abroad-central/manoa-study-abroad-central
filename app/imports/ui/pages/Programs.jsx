@@ -70,14 +70,13 @@ const Programs = () => {
               </select>
               <div style={{ paddingBottom: '60px' }} />
               <h4>{ title }</h4>
-              <select id="program-selection-select" style={{ width: '375px', height: '40px' }}>
-                {
-                  options
-                }
+              <select style={{ width: '375px', height: '40px' }} value={optionSelected} onChange={handleOptionChange}>                {
+                options
+              }
               </select>
               <div style={{ paddingBottom: '40px' }} />
               <div className="d-flex justify-content-center">
-                <button id="search-programs-button" type="submit" className="btn mt-2" style={{ backgroundColor: 'white', color: 'black', borderColor: 'black', borderWidth: '3px', fontWeight: 'bold' }}>
+                <button id="search-programs-button" type="submit" className="btn mt-2" style={{ backgroundColor: 'white', color: 'black', borderColor: 'black', borderWidth: '3px', fontWeight: 'bold' }} onClick={handleSearch}>
                   Search
                 </button>
               </div>
