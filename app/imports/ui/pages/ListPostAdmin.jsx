@@ -22,7 +22,7 @@ const ListPostAdmin = () => {
     };
   }, []);
   return (ready ? (
-    <Container className="py-3">
+    <Container className="py-3" id="admin-post-page">
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">
