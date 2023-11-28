@@ -25,7 +25,7 @@ const ListPrograms = () => {
   }, []);
   console.log('programs: ', programs);
   return (ready ? (
-    <Container className="py-3">
+    <Container id="listPrograms-page" className="py-3">
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">

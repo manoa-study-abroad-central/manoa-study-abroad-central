@@ -53,12 +53,32 @@ class NavBar {
     await testController.click('#login-dropdown-sign-up');
   }
 
+  async gotoAddPostPage(testController) {
+    await testController.click('#add-stuff-nav');
+  }
+
+  async gotoAdminHomePage(testController) {
+    await testController.click('#admin-home-nav');
+  }
+
+  async gotoProgramsPage(testController) {
+    await testController.click('#programs-nav');
+  }
+
+  async gotoListPostUserPage(testController) {
+    await testController.click('#testimonials-nav');
+  }
+
   async gotoUserPost(testController) {
-    await testController.click('#list-upost-nav');
+    await testController.click('#testimonials-nav');
   }
 
   async gotoAdminPost(testController) {
-    await testController.click('#list-apost-nav');
+    await testController.click('#admin-post-nav');
+  }
+
+  async gotoListProgramsPage(testController) {
+    await testController.click('#list-programs-nav');
   }
 }
 

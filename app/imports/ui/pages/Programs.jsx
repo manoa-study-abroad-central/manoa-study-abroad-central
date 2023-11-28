@@ -54,7 +54,7 @@ const Programs = () => {
     title = 'Select Country/Region';
   }
   return (
-    <Container className="py-3">
+    <Container id="programs-page" className="py-3">
       <Row className="justify-content-center">
         <Col xs={12} md={4}>
           <h2 className="text-center" style={{ fontFamily: 'Roboto', fontWeight: '500', fontSize: '35px' }}>Program Selection Page</h2>
@@ -63,19 +63,21 @@ const Programs = () => {
               <h3 className="text-center" style={{ fontWeight: 'bold' }}>Program Selection</h3>
               <hr />
               <h4 style={{ paddingTop: '15px' }}>Program or Country/Region</h4>
-              <select style={{ width: '375px', height: '40px' }} onChange={changeSelectionOption}>
+              <select id="program-type-select" style={{ width: '375px', height: '40px' }} onChange={changeSelectionOption}>
                 <option>Select</option>
                 <option>Program</option>
                 <option>Country/Region</option>
               </select>
               <div style={{ paddingBottom: '60px' }} />
-              <h4>{title}</h4>
-              <select style={{ width: '375px', height: '40px' }} value={optionSelected} onChange={handleOptionChange}>
-                {options}
+              <h4>{ title }</h4>
+              <select id="program-selection-select" style={{ width: '375px', height: '40px' }}>
+                {
+                  options
+                }
               </select>
               <div style={{ paddingBottom: '40px' }} />
               <div className="d-flex justify-content-center">
-                <button type="submit" className="btn mt-2" style={{ backgroundColor: 'white', color: 'black', borderColor: 'black', borderWidth: '3px', fontWeight: 'bold' }} onClick={handleSearch}>
+                <button id="search-programs-button" type="submit" className="btn mt-2" style={{ backgroundColor: 'white', color: 'black', borderColor: 'black', borderWidth: '3px', fontWeight: 'bold' }}>
                   Search
                 </button>
               </div>

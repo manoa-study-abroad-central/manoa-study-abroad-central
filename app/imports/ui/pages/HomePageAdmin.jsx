@@ -4,7 +4,7 @@ import { Meteor } from 'meteor/meteor';
 
 /* A simple static component to render some text for the landing page. */
 const HomePageAdmin = () => (
-  <Container id="landing-page" fluid className="py-3">
+  <Container id="adminHome-page" fluid className="py-3">
     <Row className="align-middle text-center">
       <Col className="d-flex flex-column justify-content-center">
         <h1>Manoa Study Abroad Central</h1>
