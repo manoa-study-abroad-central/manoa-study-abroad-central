@@ -6,6 +6,7 @@ import { Button, Card, Col, Image, Row, Container } from 'react-bootstrap';
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
 const PostAdmin = ({ post, collection }) => {
   const removeItem = (docID) => {
+    // eslint-disable-next-line no-console
     console.log(`The item to remove ${docID}`);
     collection.remove(docID);
   };

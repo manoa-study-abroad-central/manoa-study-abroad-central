@@ -6,9 +6,12 @@ import { navBar } from './navbar.component';
 import { addPostPage } from './addPost.page';
 import { adminHomePage } from './homePageAdmin.page';
 import { programsPage } from './programs.page';
+// eslint-disable-next-line no-unused-vars
 import { nationalStudentExchangePage } from './nationalStudentExchange.page';
+// eslint-disable-next-line no-unused-vars
 import { studyAbroadCenterPage } from './studyAbroadCenter.page';
 import { listAdminPost } from './listadminpost.page';
+// eslint-disable-next-line no-unused-vars
 import { listUserPost } from './listuserpost.page';
 import { listProgramsPage } from './listPrograms.page';
 

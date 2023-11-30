@@ -23,6 +23,7 @@ const ListPrograms = () => {
       ready: rdy,
     };
   }, []);
+  // eslint-disable-next-line no-console
   console.log('programs: ', programs);
   return (ready ? (
     <Container id="listPrograms-page" className="py-3">
