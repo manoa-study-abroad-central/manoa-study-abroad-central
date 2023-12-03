@@ -1,24 +1,157 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    {
+      "email": "admin@foo.com",
+      "password": "changeme",
+      "role": "admin"
+    },
+    {
+      "email": "john@foo.com",
+      "password": "changeme"
+    }
   ],
-
   "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+    {
+      "name": "Basket",
+      "quantity": 3,
+      "owner": "john@foo.com",
+      "condition": "excellent"
+    },
+    {
+      "name": "Bicycle",
+      "quantity": 2,
+      "owner": "john@foo.com",
+      "condition": "poor"
+    },
+    {
+      "name": "Banana",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "good"
+    },
+    {
+      "name": "Boogie Board",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "excellent"
+    }
   ],
-
   "defaultPrograms": [
-    { "program": "program", "school": "school", "country": "country", "region": "region", "description": "description", "image": "image", "site":  "site", "url":  "url"}
-    ],
-
+    {
+      "program": "program",
+      "school": "school",
+      "country": "country",
+      "region": "region",
+      "description": "description",
+      "image": "image",
+      "site": "site",
+      "url": "url"
+    }
+  ],
   "defaultPost": [
-    { "title":  "Bonjour from Paris! \uD83E\uDD56\uD83C\uDDEB\uD83C\uDDF7", "description":  "As the plane touched down at Charles de Gaulle Airport, I couldn't help but feel a rush of excitement and anticipation. My study abroad adventure in France was about to begin, and I was ready to embrace every opportunity for learning, cultural immersion, and personal growth. One of the main reasons I chose France was its rich academic history and prestigious institutions. I enrolled in a captivating program at Sorbonne University, where each lecture felt like a journey through centuries of art, literature, and philosophy. The academic environment fostered critical thinking and a deep appreciation for the subjects. Living in the heart of Paris offered more than just academic pursuits. Every weekend was a new chapter of exploration. From the Louvre to the charming streets of Montmartre, I immersed myself in the vibrant French culture. Conversations at local cafés became my language lessons, and each interaction was a chance to enhance my language skills. Studying abroad in France wasn't just about academics; it was a transformative experience. Navigating a new city, adapting to a different lifestyle, and overcoming challenges enhanced my resilience and independence. I returned home not just with a degree but with a newfound sense of confidence.", "owner": "john@foo.com", "program":  "National Student Exchange (NSE)", "name": "John",
+    {
+      "title": "Bonjour from Paris! \uD83E\uDD56\uD83C\uDDEB\uD83C\uDDF7",
+      "description": "As the plane touched down at Charles de Gaulle Airport, I couldn't help but feel a rush of excitement and anticipation. My study abroad adventure in France was about to begin, and I was ready to embrace every opportunity for learning, cultural immersion, and personal growth. One of the main reasons I chose France was its rich academic history and prestigious institutions. I enrolled in a captivating program at Sorbonne University, where each lecture felt like a journey through centuries of art, literature, and philosophy. The academic environment fostered critical thinking and a deep appreciation for the subjects. Living in the heart of Paris offered more than just academic pursuits. Every weekend was a new chapter of exploration. From the Louvre to the charming streets of Montmartre, I immersed myself in the vibrant French culture. Conversations at local cafés became my language lessons, and each interaction was a chance to enhance my language skills. Studying abroad in France wasn't just about academics; it was a transformative experience. Navigating a new city, adapting to a different lifestyle, and overcoming challenges enhanced my resilience and independence. I returned home not just with a degree but with a newfound sense of confidence.",
+      "owner": "john@foo.com",
+      "program": "National Student Exchange (NSE)",
+      "name": "John",
       "countryRegion": "France"
+    },
+    {
+      "title": "London",
+      "description": "Studying Abroad in London was definitely the best decision I’ve made in my entire life.  I took two incredibly interesting Biology courses, (Cell & Molecular Bio and Ethology), which were both taught by amazing professors who were actively performing research in their field.  The course work was refreshingly self-directed, and they offered fascinating weekly seminars with guest lecturers presenting new developments in cutting-edge studies. Now, it is true that they didn’t offer Math or Chemistry courses in London, Coso I have a little catching up to do; but I think the benefit of having Study Abroad experience in my C.V. will far outweigh any negatives when I finally apply to Medical School. I really think that the time I spent away from home allowed me to look inward and discover what I really want for myself, instead of just listening to everybody else’s suggestions.  I was able to concentrate more on my ultimate goals for the future, rather than feeling stuck in an endless cycle of coursework.  I came back to Hawaii feeling rejuvenated, and now I’m more focused and motivated than ever before.  Studying abroad has helped me grow in so many ways, I can’t imagine what my life would be like if I didn’t.  I highly recommend to anyone who’s even half-considering it, just go to an info session; it’s more feasible than you might think! ",
+      "owner": "admin@foo.com",
+      "program": "Study Abroad Center",
+      "name": "Natalia",
+      "countryRegion": "United Kingdom"
+    },
+    {
+      "title": "Hello From Spain!",
+      "description": "After traveling over 30 hours and switching to an 11-hour time difference I have finally made it to Seville. It has been a little over a week since arriving and I have loved every moment of it. From orientation, adjusting to my homestay, and exploring Seville, here is everything I’ve been up to since I got to Spain.  Home Stay: One of my favorite aspects so far has been my homestay experience. Before coming to Spain, each student filled out a questionnaire about their living preferences and it was given to the housing coordinator in Seville to match us up with a host family that would be the best fit. I can say they did a great job because my host mother is the sweetest person ever and has been such a delight to get to know. Since my roommate and I knew some Spanish before coming to Spain, we have been able to regularly conversate with our host mom and it is really exciting to not only learn more about her and life in Spain but to also improve my Spanish by speaking with a native speaker.   Orientation Week: As part of our arrival in Spain, our host institution holds an orientation week. On our first day, we attended an orientation meeting to learn about what our time will be like in Seville both leisurely and academically. During our orientation meeting, we received information from our housing coordinator, academic advisor, our external affairs advisor. What I love most about ICS is its group of administrators because they take such good care of the students studying here. They understand that being in a different country with different customs and rules can be overwhelming, and they do an amazing job of helping us adjust and learn more about what to expect here in Seville. Following our orientation meeting, we had many orientation events throughout the week which included a welcome tapas dinner, an informational walk around our neighborhood, tea tasting and belly dancing show, a flamenco show, and a relaxing boat cruise down the Guadalquivir river.  Classes: I am currently taking 4 classes and my schedule is consistently from 9 AM-1 PM, with each class being 2 hours long. The registration process was super simple as we just had to fill out a form with our classes of interest before arriving. Since the school is small (less than 30 students), only the classes that had more than 3-5 students interested were going to be taught, so we then each met with our advisor once in Seville to register for the available classes.  ",
+      "owner": "admin@foo.com",
+      "program": "Manoa International Exchange (MIX)",
+      "name": "Kylie",
+      "countryRegion": "Spain"
+    },
+    {
+      "title": "Top 10 tips + Final Update ",
+      "description": "Hello Everyone! This will be my final post for my study abroad blog. I wanted to thank the J. Edwin Whitlow Endowment Scholarship for allowing me this opportunity to study abroad. I learned so much during my time in Japan and this will truly be an experience I will never forget. Following I will be sharing my top 10 tips for any study abroad in Japan. Always have cash on hand. Many stores and restaurants will only accept cash, not card or credit cards so it is helpful to always have at least 10,000円 on hand. After getting a commuter pass like Pasmo or Suica card know you can also use it for purchases at vending machines but also convenience stores and some malls. It can act like a debit card in some cases which is very useful. If you need a good debit/ATM card I would recommend the Charles Schwab debit/ATM card. The good thing about this card is there are no ATM fees, when you withdraw money the ATM machine will say it will be charging you a fee but Schwab will later reimburse that fee so essentially you don't pay any ATM fees. Get good walking shoes. Though cute sandals or sneakers are fun to wear it is common to walk a good distance if you want to explore Tokyo so having a comfortable pair of walking shoes is a necessity. If you want to find out how to get from one train station to another instead of using Google Maps I recommend the app JapanTransit. It is very useful as you can pick a departure or arrival time and they will give you many options that you can pick from to get to your destination. Don't forget that the trains don't run 24/7. Most Tokyo train lines stop at around midnight and don't start back up again until the morning around 4:00 or 5:00am. Again the time that the train stops and starts does depend on the train line but if you live a distance away don't forget to take this into account when you go out at night. In the summer, stay hydrated. It gets very hot in Japan from July until September and heat stroke can occur so be sure to drink water or tea frequently. Don't forget to buy an e-sim to use while your in Japan. Though you won't get a phone number an e-sim will allow you to buy data which you can use to text or use the internet on your phone. Download the Line app. This messaging app is used by most Japanese people. Instead of exchanging phone numbers it is much more common to exchange Line IDs. You can text or call using the Line app. Be prepared to carry your trash around if you are exploring the city. Though you will spot some trash cans in train stations or in front/inside connivence stores, they won't be everywhere so at times you will be left to hold onto your trash until you get home. Also trash is usually separated into flammable and plastic trash so be sure to throw away your trash into the right receptacle. ",
+      "owner": "admin@foo.com",
+      "program": "Manoa International Exchange (MIX)",
+      "name": "Kililani",
+      "countryRegion": "Japan"
+    },
+    {
+      "title": "Studying Abroad was a Completion of my Dream",
+      "description": "All together, studying abroad was an invaluable and life changing experience that enhanced my academic goals as well as my appreciation for other languages, people, and cultures. It has given me the drive to develop more cultural knowledge and language skills in my future endeavors.",
+      "owner": "admin@foo.com",
+      "program": "Study Abroad Center",
+      "name": "Allissa",
+      "countryRegion": "Spain"
+    },
+    {
+      "title": "Not What I Expected",
+      "description": "I met many international students and was able to travel to many different countries. Iti was worth it, but I wish I would have studied in any other Western European country other than France...I can safely say it was my least favorite country of them all.",
+      "owner": "admin@foo.com",
+      "program": "Manoa International Exchange (MIX)",
+      "name": "Theresa",
+      "countryRegion": "France"
+    },
+    {
+      "title": "Study Abroad Experience",
+      "description": "While I did enjoy this past semester, with all the experiences, travel, and people met along the way, I would most likely not study abroad again.  As someone who didn't even apply for any colleges outside of Hawaii, spending 4 months away from my family and friends took an emotional toll on me that I don't want to go through again.  If I was more experienced being away from home, I wouldn't have had this issue and would've enjoyed study abroad more, but I wasn't able to adjust during the 4 months. With all that being said, I would definitely recommend study abroad to other students.  Even if you're not able to get over being homesick, it will teach you independence and further  your appreciation of your hometown.  If you're someone who's able to be away from home for an extended period of time, I'd recommend it even more so. ",
+      "owner": "admin@foo.com",
+      "program": "Study Abroad Center",
+      "name": "Michael",
+      "countryRegion": "Italy"
+    },
+    {
+      "title": "Reflection",
+      "description": "Whenever people ask how my experience was, I find it hard to fully explain how I truly feel to a point where I’d rather keep it to myself than give them an incomplete answer. It’s hard to put into words how it wasn’t just about the places I’ve seen but also the things in between. The people, the challenges and learnings, and the realizations. Reducing this experience into a few words is just impossible but I’ll give it a try anyway. This experience made me realize how big, and at the same time, small the world is. It’s big because it took me 30 hours of traveling to get there and knowing that I won’t be able to see my friends anytime soon because of the distance. I went to eight different countries in four months. I was in Prague where I attended Anglo-American University. When not in school, I walked around parks and grabbed coffees from different cafes. I traveled to Austria alone, went to a spa in Hungary with my roommate, visited a family friend and did a cooking class in Italy, hiked in Switzerland, saw the Eiffel Tower in Paris, danced Flamenco in Spain, and went to the biggest Christmas market in Germany. Personally, that is a lot yet I know there are way more places I haven’t discovered, foods I haven’t eaten, and cultures I haven’t experienced.  Despite the overwhelming size of this world, this experience made me realize how small the world is through the friends I’ve made and people I’ve met. If you think about it, every part of the world has their beliefs and traditions. We all see things differently yet there are things that will eventually connect us. The things I have in common with my friends and other people made me realize this world isn’t that big after all. The realization that there are people out there, thousands of miles away, that you connect with closed the idea that I had about distance.   I often catch myself thinking deeply, trying to digest every experience I’ve had. I might have overused this phrase since the beginning of my time abroad, but I am truly grateful for this experience. I am not the same person as I came here. This experience changed who I am completely. ",
+      "owner": "admin@foo.com",
+      "program": "Manoa International Exchange (MIX)",
+      "name": "Monique",
+      "countryRegion": "Czech Republic"
+    },
+    {
+      "title": "Traveling Tips for Korea",
+      "description": "As a student who has had a long road in Korea, there are my tips I highly recommend for anyone who is coming to Korea or planning to study here. Make a decision to live in a dorm or goshiwon. I personally like goshiwon better because you are living by yourself, you have the freedom to leave whenever you want to, unlike dorms. They usually have a curfew of when you can be back home by (12am). If it is past 12am, you are locked out from the building and there is no way to enter until the security unlocks the entrance again. IF YOU’RE DOING GOSHIWON, READ THIS. Landlords only know availability rooms THREE WEEKS IN ADVANCE. Tell them to notify you if the room is available on your coming date. Make sure to not do your visa last second. It takes three weeks and if information is not accurate, there will most likely be a delay in getting your visa which will mess up your itinerary. Do not bring many clothes. All you really need is two to three days worth of clothes because you will probably be exploring and buying new clothes during the first week. It will ease your big luggage. Make sure to also bring a plug adapter because US plugs will not work with Korea plug outlets. Please do not bring a hair dryer. Leave the unnecessary electronics besides laptop and a tablet at home. Learn about some of Korea’s culture. I can not express this enough. Do not come to a different country without a single knowledge about their culture. Korea has a very different culture compared to the US so at least learn the basics of their culture like when to bow to others. Bring at least $500 USD worth in cash. Not everything in Korea will accept cards. Make sure to also call your bank or credit card company that you are leaving the country so they can allow you to make purchases internationally. BUY A T-MONEY CARD. One of the big reasons for needing cash before is to buy Korea’s transportation card. The first thing you would want to do is go to a convenience store and ask for a t-money card. The only way to recharge the card is to use cash. Try making some friends from UH who are going to Korea during the same semester. I highly recommend this for anyone and especially introverts. Settling into a new country can be very very overwhelming as that happened to me. It is hard to come out of your room once you become culture shocked. Make sure to enroll into the buddy groups if it is not mandatory. Being part of the buddy groups will make a huge difference in experience when you’re in Korea. You can meet Korean local students along with international students that can speak English. There are also group activities that the club hosts to show you around Korea. I highly recommend this tip because almost all international students will not meet many Korean locals. For the party people. If you are planning to go clubbing, please keep watch for your drinks at all times. Korea is not 100% safe and there will be people who will spike your drinks. There are also a lot of other foreigners at some bars who do not consent to physical boundaries so make sure to be careful! DO NOT USE GOOGLE MAPS. I AM WARNING YOU NOW. Using Google maps is ABSOLUTELY horrible. Instead, download Kakao Maps or Naver Maps for all your travels. Bus and train stations will also have English writing so do not be scared. ",
+      "owner": "admin@foo.com",
+      "program": "Manoa International Exchange (MIX)",
+      "name": "Carter",
+      "countryRegion": "Korea"
+    },
+    {
+      "title": "Hi Shanghai!",
+      "description": "VPN. In China, because of the Great firewall, majority of the foreign websites such as Facebook, Snapchat, etc are unaccessible, therefore it is important to have a working VPN in China to stay connected. Personally I used NordVPN, and I have heard good things about ExpressVPN as well. China Mobile phone plan. Whatever SIM card you have back at home will unlikely to work in China. My T-Mobile carrier offered me 2-GB unlimited network, however it wouldn't function over 90% of the time. Therefore I highly suggest getting a Chinese SIM card, which is 99 yuan a month for 40GB of 4G data and unlimited calling.  Open a Bank Account. It is important to opening a bank account in China in order to use any of the payment platforms such as WeChat pay and Alipay. However a lot of banks in China has stopped servicing international students who is staying for less than a year. I went to various banks and finally got serviced at the Wujiaochang ICBC bank branch. A Chinese phone number is required to open a bank account. Set up Alipay and WeChat Pay. These two are the default payment platforms in China, It is the easier and fastest form of payments. Thanks to them I never bring cash when I go out and I never struggle with finance. Get a metro card. Metro is the most convenient and efficient transportation tool in Shanghai. The card will cost 20 RMB, with every ride capped at 6 RMB. With the metro card, you can skip the line to buy tickets which can save a lot of time. The metro can get to almost everywhere in Shanghai. Last metro is at 10:30 PM everyday. Fudan Wifi. There are several Wifi in the Fudan campus. “iFudan”, “iFudan.1x”, “fduwireless”, etc. The username is your Fudan ID number and password is the last 6 digits of your passport.  Download DIDI. Didi is the Uber and Lyft for China, however unlike Uber and Lyft, it is extremely cheaper with a starting price of $1.5~. Sometimes when you in a hurry with no metro station close by, calling a DIDI is the way to go. ",
+      "owner": "admin@foo.com",
+      "program": "Manoa International Exchange (MIX)",
+      "name": "Chao",
+      "countryRegion": "China"
+    },
+    {
+      "title": "I'm Alive!",
+      "description": "Long time no read! I think I'll spend this post catching you all up on what I've been doing since my last post (thankfully, I haven't had to test the effectiveness of my insurance here again.) What I have been doing is a lot of traveling within Germany plus I got to go on a big birthday trip to Paris and London with my boyfriend! On my own, I made a big trip to Berlin as well as a couple day trips to Freiburg, Stuttgart, and Heidelberg. The number of castles and museums I've been to is a little bit unreal. Europe really loves castles and museums. I'll be sharing some of my best tips and tools for traveling in Europe, as I've gotten very familiar (and very frustrated) with public transportation here.  First, GoEuro One of the first places I check when I'm planning a trip is the website GoEuro. It's a tool that helps you compare the prices and travel times for different methods of travel- train, bus, and plane. It's really good for helping you weigh the pros and cons of different ways to travel. I haven't actually flown anywhere in Europe because I don't want to deal with the hassle of airport security and passports and everything. I traveled to Munich, Berlin, Paris, and London by train and Freiburg, Stuttgart, and Heidelberg by bus. It really comes down to how much you want to spend versus how much time you are willing to give up (buses generally take longer than trains).Second, DeutscheBahn and FlixBus DeutscheBahn (otherwise known as DB) is the train system within Germany and FlixBus is the cheapest bus option for traveling within Europe. I have the DB app on my phone because if you buy a ticket at the station, it doesn't actually tell you what platform to go to, which was something totally foreign to me (everything is foreign to me, really). With the app you are able to locate the platform you'll depart from as well as check for delays or buy tickets. One giant problem I've had with DB is delays. I don't know who coined the term \"German efficiency\" but whoever did never rode with Deutsche Bahn. I had to take 3 trains to get to Berlin and I missed every single connection because of unexplained delays. There was one point in the train station where I was literally on the verge of tears because I was so frustrated so when a panhandler asked me for money it almost set me over the edge. My biggest tip is that if you have connections, leave 30+ minutes between them or you will more than likely miss your train. And make sure to buy a FlexPreis ticket because this ensures that even if you miss the train you were supposed to take, you can get on the next one for no extra charge.  Third, always travel with cash A big adjustment I've had to make in Europe is that everything is very cash based. I'm used to being able to go to the store and buy a pack of gum with my debit card. A lot of establishments in smaller German cities don't accept cards at all, or you can only use one if you spend a certain amount of money. I didn't encounter this problem as much in bigger cities like Paris or Berlin, but if you're planning on stopping for any street food or going on a hop on/hop off bus tour, it's good to have cash just in case.  Fourth, speaking of hop on/hop off bus tours DO THEM! I got the chance to take one while I was in Berlin and it's the cheapest way to travel within a city. It's good to do one entire round on the tour first so you can get your bearings and make note of where you may want to stop. Once you've done that, you can hop off on the next round at any of the spots you'd like to experience more in depth. A lot of the times it'll be much cheaper and a whole lot easier than navigating the city bus or train (definitely cheaper than a taxi) and you'll get to hear about the city in English during the tour.  Fifth, Staying safe while traveling This isn't a really surprising tip but with everything that has been happening within Europe, it's important I mention it. I'm lucky to be living and studying in such a small town in Southern Germany because it's so far from the locations of the recent terror attacks. However, my boyfriend and I visited Notre Dame the day before a terror attack and then we got to London the morning after the London Bridge attack. Big cities in Europe have been hit hard with terrorism lately, which is why I've done a lot more of my solo traveling in the latter part of my study abroad in smaller towns like Freiburg and Heidelberg. Not only is it safer, but you'll also get to have a much different cultural experience than bigger, more touristy places. This is a good article on how to stay safe while traveling in Europe.  As my study abroad comes to an end (I have 11 more days left in Germany) it's good to reflect on all the traveling I've been able to do. On my way home I'll have an 8 hour layover in Istanbul so I can check that off my list too (though this might be cheating since I'm not even going to leave the airport). I have my first final exam on Friday which I'm pretty nervous about, but I will be talking more about my university experience in my next post.",
+      "owner": "admin@foo.com",
+      "program": "Manoa International Exchange (MIX)",
+      "name": "Kelly",
+      "countryRegion": "Germany"
+    },
+    {
+      "title": "\uD83C\uDF41 Embarking on a Canadian Adventure: A National Exchange Journey \uD83C\uDF41",
+      "description": "The exchange program provided a unique opportunity to not just witness but actively participate in the rich tapestry of Canadian traditions, festivals, and everyday life.Canada's diverse climate introduced me to the beauty of all four seasons. Whether it was the winter wonderland with pristine snow, the vibrant colors of fall, the blossoms of spring, or the warmth of summer, each season left an indelible mark on this adventurous explorer. Participating in the exchange program meant more than just sightseeing. I had the chance to delve into Canada's world-renowned education system, collaborating with students and professors, and gaining fresh perspectives in the academic realm. The heartwarming hospitality of Canadians made my stay unforgettable. New friendships were forged, cultural exchanges became daily occurrences, and every interaction was a step towards building a global network of friends.",
+      "owner": "admin@foo.com",
+      "program": "National Student Exchange (NSE)",
+      "name": "Aaron",
+      "countryRegion": "Canada"
+    },
+    {
+      "title": "Summer Adventure in Kanazawa",
+      "description": "Regardless of how much you already know about a language and culture, there are always opportunities to learn more. Go into any exchange with an open mind and actively seek out opportunities to use what you are learning and apply it. Doing this will allow you have a more meaningful experience. While on these exchanges you will establish bonds with people from that area that will make you want to go back and see them again.",
+      "owner": "admin@foo.com",
+      "program": "Manoa International Exchange (MIX)",
+      "name": "Jordan",
+      "countryRegion": "Japan"
     }
   ]
 }
-
