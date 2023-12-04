@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { Button, Card, Col, Image, Row, Container } from 'react-bootstrap';
+import { Button, Card, Col, Image, Row, Container, ListGroupItem, ListGroup } from 'react-bootstrap';
+import Comment from './Comment';
 
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
-const PostAdmin = ({ post, collection }) => {
+const PostAdmin = ({ post, collection, comments }) => {
   const removeItem = (docID) => {
     // eslint-disable-next-line no-console
     console.log(`The item to remove ${docID}`);
@@ -32,6 +33,20 @@ const PostAdmin = ({ post, collection }) => {
                   <Card.Text><strong>Program:</strong> {post.program}</Card.Text>
                   <Card.Text><strong>Country/Region:</strong> {post.countryRegion}</Card.Text>
                   <Card.Text>{post.description}</Card.Text>
+                  <Row>
+                    <Col md={2} className="mt-2">
+                      <p>Likes ({post.likes})</p>
+                    </Col>
+                    <Col md={2} className="mt-2">
+                      <p>Comments ({comments.length})</p>
+                    </Col>
+                  </Row>
+                  <Card.Text><h5>Comments:</h5> </Card.Text>
+                  <ListGroup variant="flush">
+                    <ListGroupItem>
+                      {comments.map((comment) => <Comment key={comment._id} comment={comment} />)}
+                    </ListGroupItem>
+                  </ListGroup>
                   <Card.Text><strong>Owner:</strong> {post.owner}</Card.Text>
                   <Button variant="danger" id="white" onClick={() => removeItem(post._id)}>Remove</Button>
                 </Col>
@@ -61,7 +76,14 @@ PostAdmin.propTypes = {
     isFlagged: PropTypes.bool,
     name: PropTypes.string,
     countryRegion: PropTypes.string,
+    likes: PropTypes.number,
   }).isRequired,
+  comments: PropTypes.arrayOf(PropTypes.shape({
+    comment: PropTypes.string,
+    postId: PropTypes.string,
+    owner: PropTypes.string,
+    _id: PropTypes.string,
+  })).isRequired,
   // eslint-disable-next-line react/forbid-prop-types
   collection: PropTypes.object.isRequired,
 };
