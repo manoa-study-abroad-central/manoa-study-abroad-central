@@ -30,16 +30,16 @@ const ListPrograms = () => {
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">
-            <h2>List Programs</h2>
+            <h2>List of Study Abroad Programs</h2>
           </Col>
           <Table striped bordered hover>
             <thead>
               <tr>
-                <th>School</th>
+                <th>Schol</th>
                 <th>Country</th>
-                <th>Region</th>
                 <th>Description</th>
                 <th>Image</th>
+                <th>URL</th>
                 <th>Edit</th>
               </tr>
             </thead>

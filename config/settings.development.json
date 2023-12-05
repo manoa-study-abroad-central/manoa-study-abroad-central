@@ -38,14 +38,44 @@
   ],
   "defaultPrograms": [
     {
-      "program": "program",
-      "school": "school",
-      "country": "country",
-      "region": "region",
-      "description": "description",
-      "image": "image",
-      "site": "site",
-      "url": "url"
+      "school": "Akita International University",
+      "country": "Japan",
+      "description": "\n\nAkita International University (AIU) is a four-year liberal arts university located in Akita Prefecture in the Tohoku region of northern Japan established in April 2004. It is consistently recognized as one of the top universities in Japan for its unique and innovative approach to education. The undergraduate curriculum focuses on Global Business and Global Studies and offers all subject matter courses in English only, the first program in Japan to do so. Foreign language courses in 6 languages (including Japanese) are offered as well. AIU requires all short-term international students to live in on-campus housing and nearly 90% of all AIU students live on-campus. Living on campus gives students easy access to student clubs and circles, campus events, and over 200 community interaction opportunities per year.\n\nSecond only to the on-campus living environment, international students rated university-organized activities and clubs as their favorite part of their AIU experience. Akita City, where AIU is located, is the capital of Akita Prefecture and has a population of about 300,000. It is an ideally-sized city to provide the opportunity for international students to get immersed in the friendly, local culture while also offering convenient access to international goods and services. Akita Prefecture is known for its natural beauty and resources. The university is located close to ski areas, scenic hiking opportunities, and the Sea of Japan coastline. Akita is particularly famous in Japan for producing the country’s most delicious rice and sake. (Source: Akita International University website)\n",
+      "image": "https://manoa.hawaii.edu//mix//wp-content//uploads//2017//11//IMG_5172.jpg",
+      "site": "Manoa International Exchange (MIX)",
+      "url":  "https://manoa.hawaii.edu/mix/partner-universities/akita/"
+    },
+    {
+      "school": "Anglo-American University",
+      "country": "Czech Republic",
+      "description": "\n\nFounded in Prague in 1990, AAU is the oldest private university in the Czech Republic. Combining the best of American and British academic traditions, AAU prides itself on the innovative quality of their teaching and offers a personalized, discourse-lead education in the English language to students drawn from over 70 countries across the world. AAU is accredited by the WASC Senior College and University Commission (WSCUC), 1 of 6 official regional accrediting associations in the United States. WSCUC has accredited 12 select foreign universities, including AAU – the only university in Europe to receive this prestigious accreditation.\n\nAAU aspires to be a leading university in the Czech Republic, recognized for innovation and quality in teaching and learning with a commitment to societal excellence in a globalized world. Freedom of speech, learning and teaching, freedom of thought and research, and a right to express or to challenge one’s opinion represent the fundamental components of AAU’s academic freedom for faculty, staff, and students. The academic, ethical, and moral responsibility of AAU educators and researchers towards students, AAU’s academic community, and AAU as an institution represent an integral part of the concept and conduct of academic freedom at Anglo-American University. Although AAU doesn’t directly provide housing, students can select from a variety of housing options, including dormitories and apartments. AAU can recommend a wide variety of local rental agencies, private dormitories, flat sharing housing forums, and other options to help you find the right housing. Many of these also provide the housing documents you may need for your visa application. (Source: Anglo-American University website)\n",
+      "image": "https://manoa.hawaii.edu/mix/wp-content/uploads/2017/11/architecture-1845560-2000x1000.jpg",
+      "site":  "Manoa International Exchange (MIX)",
+      "url":  "https://manoa.hawaii.edu/mix/partner-universities/anglo/"
+    },
+    {
+      "school": "Ateneo de Manila University",
+      "country": "Philippines",
+      "description": "Ateneo de Manila University is a center for excellence and development, offering students the opportunity to the liberal arts, engineering, and business in the fast-growing capital of the Philippines, Metro Manila. The university’s community focus invites students to work on projects such as house builds and disaster relief, while gaining hands on experience in politics and economics. Ateneo de Manila also has a range of environmental initiatives and social groups that keep students involved in fun and interactive ways. While staying involved on campus is easy, the city also provides students with a vibrant atmosphere emanating from the bustle of activities of a fast-growing economy against a cultural backdrop that spans the modern and traditional.",
+      "image": "https://manoa.hawaii.edu/mix/wp-content/uploads/2017/11/architecture-1845560-2000x1000.jpg",
+      "site":  "Manoa International Exchange (MIX)",
+      "url":  "https:\\/\\/manoa.hawaii.edu\\/mix\\/wp-content\\/uploads\\/2017\\/11\\/DP1fXegVQAEJxHK.jpg"
+    },
+    {
+      "school": "Alabama State University",
+      "country": "United States",
+      "description": "Alabama State University, a Historically Black College/University, was America's first state-supported academic institution founded for the education of Blacks. It was established in 1866 as Lincoln Normal in Marion, Alabama and was moved to Montgomery in 1887. After several name changes the school received its present name in 1969. The 105-acre urban campus has over 5500 students and offers 40 different programs of study. The College of Business Administration has developed special programs geared to assist small business entrepreneurs which give students opportunity for actual experience in the market place. ",
+      "image": "https://nse.org/docs/slides/3_3_Levi-Watkins-Learning-Center.jpg",
+      "site": "National Student Exchange (NSE)",
+      "url": "https://nse.org/exchange/campus-profile/3/#"
+    },
+    {
+      "school": "Bridgewater State University",
+      "country": "United States",
+      "description": "Ateneo de Manila University is a center for excellence and development, offering students the opportunity to the liberal arts, engineering, and business in the fast-growing capital of the Philippines, Metro Manila. The university’s community focus invites students to work on projects such as house builds and disaster relief, while gaining hands on experience in politics and economics. Ateneo de Manila also has a range of environmental initiatives and social groups that keep students involved in fun and interactive ways. While staying involved on campus is easy, the city also provides students with a vibrant atmosphere emanating from the bustle of activities of a fast-growing economy against a cultural backdrop that spans the modern and traditional.",
+      "image": "https://nse.org/docs/slides/10_2_X.jpg",
+      "site":  "National Student Exchange (NSE)",
+      "url":  "https://nse.org/exchange/campus-profile/10/"
     }
   ],
   "defaultPost": [

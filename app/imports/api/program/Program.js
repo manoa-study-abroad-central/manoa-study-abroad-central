@@ -14,7 +14,6 @@ class ProgramsCollection {
     this.schema = new SimpleSchema({
       school: String,
       country: String,
-      region: String,
       description: String,
       image: String,
       site: String,
