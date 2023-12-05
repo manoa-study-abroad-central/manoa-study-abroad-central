@@ -23,8 +23,7 @@ const ProgramItem = ({ program }) => (
     </Card.Header>
     <Card.Title>{program.school}</Card.Title>
     <Card.Subtitle>{program.country}</Card.Subtitle>
-    <Card.Subtitle>{program.site}</Card.Subtitle>
-    <Card.Subtitle>{program.url}</Card.Subtitle>
+    <Card.Subtitle><Link to={program.url}>{program.site}</Link></Card.Subtitle>
     <Card.Body>
       <Card.Text>{program.description}</Card.Text>
     </Card.Body>
