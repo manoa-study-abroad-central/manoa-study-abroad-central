@@ -27,6 +27,7 @@ import ListPrograms from '../pages/ListPrograms';
 import NationalStudentExchange from '../pages/NationalStudentExchange';
 import CountrySpecific from '../pages/CountrySpecific';
 import MIX from '../pages/MIX';
+import EditProgram from '../pages/EditProgram';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
           <Route path="/listStuff" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/Programs" element={<ProtectedRoute><Programs /></ProtectedRoute>} />
           <Route path="/ListPrograms" element={<ProtectedRoute><ListPrograms /></ProtectedRoute>} />
+          <Route path="/editProgram/:_id" element={<ProtectedRoute><EditProgram /></ProtectedRoute>} />
           <Route path="/StudyAbroadCenter" element={<ProtectedRoute><StudyAbroadCenter /></ProtectedRoute>} />
           <Route path="/NationalStudentExchange" element={<ProtectedRoute><NationalStudentExchange /></ProtectedRoute>} />
           <Route path="/MIX" element={<ProtectedRoute><MIX /></ProtectedRoute>} />

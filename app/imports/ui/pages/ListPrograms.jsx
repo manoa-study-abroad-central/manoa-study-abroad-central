@@ -40,6 +40,7 @@ const ListPrograms = () => {
                 <th>Description</th>
                 <th>Image</th>
                 <th>URL</th>
+                <th>Site</th>
                 <th>Edit</th>
               </tr>
             </thead>

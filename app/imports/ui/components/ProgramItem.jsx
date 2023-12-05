@@ -10,9 +10,10 @@ const ProgramItem = ({ program }) => (
     <td>{program.country}</td>
     <td>{program.description}</td>
     <td>{program.image}</td>
+    <td>{program.site}</td>
     <td>{program.url}</td>
     <td>
-      <Link to={`/edit/${program._id}`}>Edit</Link>
+      <Link to={`/editProgram/${program._id}`}>Edit</Link>
     </td>
   </tr>
 );
@@ -24,6 +25,7 @@ ProgramItem.propTypes = {
     country: PropTypes.string,
     description: PropTypes.string,
     image: PropTypes.string,
+    site: PropTypes.string,
     url: PropTypes.string,
     _id: PropTypes.string,
   }).isRequired,
