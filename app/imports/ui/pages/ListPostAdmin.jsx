@@ -33,7 +33,7 @@ const ListPostAdmin = () => {
             <h1>Admin Post Page</h1>
           </Col>
           <Row>
-            {posts.map((post) => (<Row key={post._id}><PostAdmin post={post} collection={Posts.collection} comments={comments.filter(comment => (comment.postId === post._id))} /></Row>))}
+            {posts.map((post) => (<Row key={post._id}><PostAdmin post={post} collection={Posts.collection} comments={comments.filter(comment => (comment.postId === post._id))} cc={Comments.collection} /></Row>))}
           </Row>
         </Col>
       </Row>

@@ -5,11 +5,14 @@ import { Button, Card, Col, Image, Row, Container, ListGroupItem, ListGroup } fr
 import Comment from './Comment';
 
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
-const PostAdmin = ({ post, collection, comments }) => {
+const PostAdmin = ({ post, collection, comments, cc }) => {
   const removeItem = (docID) => {
     // eslint-disable-next-line no-console
     console.log(`The item to remove ${docID}`);
     collection.remove(docID);
+  };
+  const removeComment = (cID) => {
+    cc.remove(cID);
   };
 
   const toggleFlag = (docID) => {
@@ -44,11 +47,11 @@ const PostAdmin = ({ post, collection, comments }) => {
                   <Card.Text><h5>Comments:</h5> </Card.Text>
                   <ListGroup variant="flush">
                     <ListGroupItem>
-                      {comments.map((comment) => <Comment key={comment._id} comment={comment} />)}
+                      {comments.map((comment) => <div><Comment key={comment._id} comment={comment} /><Button variant="danger" id="white" onClick={() => removeComment(comment._id)}>Remove Comment</Button> </div>)}
                     </ListGroupItem>
                   </ListGroup>
                   <Card.Text><strong>Owner:</strong> {post.owner}</Card.Text>
-                  <Button variant="danger" id="white" onClick={() => removeItem(post._id)}>Remove</Button>
+                  <Button variant="danger" id="white" onClick={() => removeItem(post._id)}>Remove Post</Button>
                 </Col>
               </Row>
               <Row className="justify-content-end">
@@ -86,6 +89,8 @@ PostAdmin.propTypes = {
   })).isRequired,
   // eslint-disable-next-line react/forbid-prop-types
   collection: PropTypes.object.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  cc: PropTypes.func.isRequired,
 };
 
 export default PostAdmin;
