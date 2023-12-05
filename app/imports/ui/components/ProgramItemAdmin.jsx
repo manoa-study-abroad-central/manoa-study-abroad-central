@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Card, Image } from 'react-bootstrap';
 
-/** Renders a single row in the List Program table. See pages/ListProgram.jsx. */
+/** Renders a single row in the List Program table. See pages/ListProgramAdmin.jsx. */
 // todo: make it look okay
-const ProgramItem = ({ program }) => (
+const ProgramItemAdmin = ({ program }) => (
   /* <tr>
     <td>{program.school}</td>
     <td>{program.country}</td>
@@ -23,16 +23,16 @@ const ProgramItem = ({ program }) => (
     </Card.Header>
     <Card.Title>{program.school}</Card.Title>
     <Card.Subtitle>{program.country}</Card.Subtitle>
-    <Card.Subtitle>{program.site}</Card.Subtitle>
-    <Card.Subtitle>{program.url}</Card.Subtitle>
+    <Card.Subtitle><Link to={program.url}>{program.site}</Link></Card.Subtitle>
     <Card.Body>
       <Card.Text>{program.description}</Card.Text>
+      <Link to={`/editProgram/${program._id}`}>Edit</Link>
     </Card.Body>
   </Card>
 );
 
 // Require a document to be passed to this component.
-ProgramItem.propTypes = {
+ProgramItemAdmin.propTypes = {
   program: PropTypes.shape({
     school: PropTypes.string,
     country: PropTypes.string,
@@ -44,4 +44,4 @@ ProgramItem.propTypes = {
   }).isRequired,
 };
 
-export default ProgramItem;
+export default ProgramItemAdmin;

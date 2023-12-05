@@ -57,9 +57,9 @@
       "school": "Ateneo de Manila University",
       "country": "Philippines",
       "description": "Ateneo de Manila University is a center for excellence and development, offering students the opportunity to the liberal arts, engineering, and business in the fast-growing capital of the Philippines, Metro Manila. The university’s community focus invites students to work on projects such as house builds and disaster relief, while gaining hands on experience in politics and economics. Ateneo de Manila also has a range of environmental initiatives and social groups that keep students involved in fun and interactive ways. While staying involved on campus is easy, the city also provides students with a vibrant atmosphere emanating from the bustle of activities of a fast-growing economy against a cultural backdrop that spans the modern and traditional.",
-      "image": "https://manoa.hawaii.edu/mix/wp-content/uploads/2017/11/architecture-1845560-2000x1000.jpg",
+      "image": "https://manoa.hawaii.edu/mix/wp-content/uploads/2017/11/DP1fXegVQAEJxHK.jpg",
       "site":  "Manoa International Exchange (MIX)",
-      "url":  "https:\\/\\/manoa.hawaii.edu\\/mix\\/wp-content\\/uploads\\/2017\\/11\\/DP1fXegVQAEJxHK.jpg"
+      "url":  "https://manoa.hawaii.edu/mix/partner-universities/ateneo/"
     },
     {
       "school": "Alabama State University",
@@ -72,10 +72,42 @@
     {
       "school": "Bridgewater State University",
       "country": "United States",
-      "description": "Ateneo de Manila University is a center for excellence and development, offering students the opportunity to the liberal arts, engineering, and business in the fast-growing capital of the Philippines, Metro Manila. The university’s community focus invites students to work on projects such as house builds and disaster relief, while gaining hands on experience in politics and economics. Ateneo de Manila also has a range of environmental initiatives and social groups that keep students involved in fun and interactive ways. While staying involved on campus is easy, the city also provides students with a vibrant atmosphere emanating from the bustle of activities of a fast-growing economy against a cultural backdrop that spans the modern and traditional.",
+      "description": "Bridgewater State University is the comprehensive public University of southeastern Massachusetts, the fastest growing region in the Northeast. Located 28 miles south of Boston, 45 minutes from Providence Rhode Island and Cape Cod, the University is served by an on-campus stop of the MBTA rail system. Bridgewater State University, situated on 235 acres, is one of America's first teacher preparation institutions. Through its colleges of Education and Health Studies, Humanities and Social Sciences, Science and Mathematics, and Business the University offers 34 major programs of study. Co-curricular activities include a strong NCAA Division III athletic program, a full range of student clubs and organizations and opportunities for leadership development, service learning, internships, research, study abroad, and honors programs. Guaranteed student housing for exchange students. ",
       "image": "https://nse.org/docs/slides/10_2_X.jpg",
-      "site":  "National Student Exchange (NSE)",
-      "url":  "https://nse.org/exchange/campus-profile/10/"
+      "site": "National Student Exchange (NSE)",
+      "url": "https://nse.org/exchange/campus-profile/10/"
+    },
+    {
+      "school": "Rhode Island College",
+      "country": "United States",
+      "description": "Rhode Island College is a regional comprehensive public college that serves approximately 6,400 undergraduate, graduate and doctoral students through its five schools: the Faculty of Arts and Sciences, the Feinstein School of Education and Human Development, the School of Business, the School of Nursing and the School of Social Work. Established in 1854, we are Rhode Island’s first public institution of higher education. The college is located on a beautiful 180-acre suburban campus in the vibrant city of Providence, and has satellite locations at the Rhode Island Nursing Education Center in Providence’s Innovation District and the Rhode Island College Workforce Development Hub in Central Falls, RI. We are known throughout the Northeast for high-quality academic programs, small class sizes, personalized, hands-on learning experiences, world-class faculty, and high value compared to other four-year institutions. ",
+      "image": "https://nse.org/docs/slides/71_4_State-House-tours-led-by-RIC-interns.jpg",
+      "site": "National Student Exchange (NSE)",
+      "url": "https://nse.org/exchange/campus-profile/71/"
+    },
+    {
+      "school": "International School of Tongji University",
+      "country": "China",
+      "description": "The University of Hawai‘i at Mānoa Semester in Shanghai Study Abroad program is based at the International School of Tongji University. Founded in 1907 as the Tongji German Medical School, Tongji University 同济大学 (Tóngjì Dàxué) is now a highly ranked comprehensive university offering programs in science, engineering, medicine, arts, and law.\n\nTongji University has a comfortable and beautifully landscaped campus, featuring buildings in many styles (the university is famous for its architecture school).  The University is ringed by convenience stores, little restaurants, coffee shops, cleaners, bike repair shops, fruit stores, phone shops, banks and the post office.  The Tongji area is still relatively low-rise, with a neighborhood feel and plenty of Shanghai’s famous plane trees for shade.  Now that the center of Shanghai has moved east, Tongji has a more central and very convenient location: entrances to the No. 10 Metro line, one of the best in the city, are right outside the University’s front gate.",
+      "image": "https://www.studyabroad.hawaii.edu/wp-content/uploads/shanghai-collage.jpg",
+      "site":  "Study Abroad Center",
+      "url":  "https://www.studyabroad.hawaii.edu/programs/semester-year/shanghai-china/"
+    },
+    {
+      "school": "University of Roehampton",
+      "country": "United Kingdom",
+      "description": "The program is based at University of Roehampton (UR). Roehampton is made up of four Colleges (Digby Stuart, Froebel, Southlands, and Whitelands), each with its own unique personality. RU has facilities contained on-campus, such as libraries, transport, student union, and language labs. The four-story Learning Resources Centre offers a fully stocked library, multimedia facilities, online catalogs, media services, Languages Centre and study rooms. There is also a medical center, student bookshop and a range of cafés and eateries on campus.",
+      "image": "https://www.studyabroad.hawaii.edu/wp-content/uploads/london-web-collage.jpg",
+      "site":  "Study Abroad Center",
+      "url":  "https://www.studyabroad.hawaii.edu/programs/semester-year/london-england/"
+    },
+    {
+      "school": "Lorenzo de’ Medici",
+      "country": "Italy",
+      "description": "Established in 1973, Lorenzo de’ Medici (LdM) is located in the heart of this elegant city, on Via Faenza, in the San Lorenzo quarter, just a few steps from the famous Medici Chapel and the San Lorenzo Market. Originally a convent, the main building was completely renovated in 1988. It occupies four floors and offers a variety of modern conveniences, such as a cafeteria, air conditioning, reading rooms, three professional kitchens, and a garden. The church of San Iancopo di Corbolini dates to the 13th Century and is an integral part of the school. LdM is an urban school, consisting of six building sites within walking distance of one another.",
+      "image": "https://www.studyabroad.hawaii.edu/wp-content/uploads/florence-web-banner.jpg",
+      "site":  "Study Abroad Center",
+      "url":  "https://www.studyabroad.hawaii.edu/programs/semester-year/florence-italy/"
     }
   ],
   "defaultPost": [

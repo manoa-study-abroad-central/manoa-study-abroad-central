@@ -2,12 +2,12 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useTracker } from 'meteor/react-meteor-data';
-import ProgramItem from '../components/ProgramItem';
+import ProgramItemAdmin from '../components/ProgramItemAdmin';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Programs } from '../../api/program/Program';
 
 /* Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
-const ListPrograms = () => {
+const ListProgramsAdmin = () => {
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
   const { ready, programs } = useTracker(() => {
     // Note that this subscription will get cleaned up
@@ -33,7 +33,7 @@ const ListPrograms = () => {
             <h2>List of Study Abroad Programs</h2>
           </Col>
           <Col className="justify-content-center">
-            {programs.map((program) => (<Col key={program._id}><ProgramItem program={program} /></Col>))}
+            {programs.map((program) => (<Col key={program._id}><ProgramItemAdmin program={program} /></Col>))}
           </Col>
         </Col>
       </Row>
@@ -69,4 +69,4 @@ const ListPrograms = () => {
     </Container>
  */
 
-export default ListPrograms;
+export default ListProgramsAdmin;
