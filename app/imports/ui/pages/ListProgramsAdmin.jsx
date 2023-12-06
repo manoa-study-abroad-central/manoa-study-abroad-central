@@ -2,6 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useTracker } from 'meteor/react-meteor-data';
+import { Link } from 'react-router-dom';
 import ProgramItemAdmin from '../components/ProgramItemAdmin';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Programs } from '../../api/program/Program';
@@ -31,6 +32,7 @@ const ListProgramsAdmin = () => {
         <Col md={7}>
           <Col className="text-center">
             <h2>List of Study Abroad Programs</h2>
+            <Link to="/adminAddProgram">Admin Add Study Abroad Program</Link>
           </Col>
           <Col className="justify-content-center">
             {programs.map((program) => (<Col key={program._id}><ProgramItemAdmin program={program} /></Col>))}

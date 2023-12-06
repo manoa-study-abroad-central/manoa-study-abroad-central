@@ -29,6 +29,7 @@ import CountrySpecific from '../pages/CountrySpecific';
 import MIX from '../pages/MIX';
 import EditProgram from '../pages/EditProgram';
 import ListProgramsAdmin from '../pages/ListProgramsAdmin';
+import AddProgramAdmin from '../pages/AddProgramAdmin';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -63,6 +64,7 @@ const App = () => {
           <Route path="/adminpost" element={<AdminProtectedRoute ready={ready}><ListPostAdmin /></AdminProtectedRoute>} />
           <Route path="/adminhome" element={<AdminProtectedRoute ready={ready}><HomePageAdmin /></AdminProtectedRoute>} />
           <Route path="/adminListPrograms" element={<AdminProtectedRoute ready={ready}><ListProgramsAdmin /></AdminProtectedRoute>} />
+          <Route path="/adminAddProgram" element={<AdminProtectedRoute ready={ready}><AddProgramAdmin /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/list/country/:countryName" element={<ProtectedRoute><CountrySpecific /></ProtectedRoute>} />
