@@ -21,9 +21,9 @@ const ProgramItemAdmin = ({ program }) => (
     <Card.Header>
       <Image src={program.image} className="img-fluid shadow-4" />
     </Card.Header>
-    <Card.Title>{program.school}</Card.Title>
-    <Card.Subtitle>{program.country}</Card.Subtitle>
-    <Card.Subtitle><Link to={program.url}>{program.site}</Link></Card.Subtitle>
+    <Card.Title className="text-center">{program.school}</Card.Title>
+    <Card.Subtitle className="py-1 text-center">{program.country}</Card.Subtitle>
+    <Card.Subtitle className="py-2 text-center"><Link to={program.url}>{program.site}</Link></Card.Subtitle>
     <Card.Body>
       <Card.Text>{program.description}</Card.Text>
       <Link to={`/editProgram/${program._id}`}>Edit</Link>
