@@ -14,7 +14,6 @@ import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import SignUp from '../pages/SignUp';
 import SignOut from '../pages/SignOut';
-import NavBar from '../components/NavBar';
 import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -27,6 +26,7 @@ import ListPrograms from '../pages/ListPrograms';
 import NationalStudentExchange from '../pages/NationalStudentExchange';
 import CountrySpecific from '../pages/CountrySpecific';
 import MIX from '../pages/MIX';
+import NavBarSelection from '../components/NavBarSelection';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
   return (
     <Router>
       <div className="d-flex flex-column min-vh-100">
-        <NavBar />
+        <NavBarSelection />
         <Routes>
           <Route exact path="/" element={<Landing />} />
           <Route path="/signin" element={<SignIn />} />
