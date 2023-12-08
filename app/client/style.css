@@ -37,7 +37,7 @@ body {
 
 #landing-page {
   background-color: rgb(70, 198, 186);
-  /*cities, top right cloud, top left cloud, bottom right cloud, wave behind cities*/
+  /*cities, top right cloud, top left cloud, bottom right cloud, hot air balloon, wave behind cities*/
   background-image: url("/images/cities.png"), url("/images/top-right-cloud.png"), url("/images/top-left-cloud.png"), url("/images/bottom-right-cloud.png"), url("/images/bottom-left-cloud.png"), url("/images/hot-air-balloon.png"), url("/images/wave.png");
   background-size: 675px 500px, 450px 350px, 550px 250px, 525px 250px, 525px 250px, 425px 375px, 875px 875px; /*width height */
   background-position: top 260px right 85px, top -10px right -10px, top -20px left -10px, bottom -20px right -25px, bottom -20px left -10px, top 700px left 30px, top 105px right 0px;
@@ -146,6 +146,35 @@ body {
   font-weight: bolder;
   padding-bottom: 175px;
   padding-top: 50px;
+}
+
+/*User Home Page*/
+#homepage {
+  background-color: rgb(70, 198, 186);
+  /*cities, top right cloud, top left cloud, bottom right cloud, hot air balloon, wave behind cities*/
+  background-image: url("/images/cities.png"), url("/images/top-right-cloud.png"), url("/images/top-left-cloud.png"), url("/images/bottom-right-cloud.png"), url("/images/bottom-left-cloud.png"), url("/images/hot-air-balloon.png"), url("/images/wave.png");
+  background-size: 675px 500px, 450px 350px, 550px 250px, 525px 250px, 525px 250px, 425px 375px, 875px 875px; /*width height */
+  background-position: top 240px right 85px, top -10px right -10px, top -20px left -10px, bottom -20px right -25px, bottom -20px left -10px, top 620px left 30px, top 85px right 0px;
+  background-repeat: no-repeat;
+}
+
+#welcome {/*Welcome header*/
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: Garamond;
+  animation: 3s fadeIn;
+}
+
+#welcome-description { /*Welcome description*/
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  margin-left: 70px;
+  color: white;
+  font-size: 23px;
+  font-family: Garamond;
+  animation: 3s fadeIn;
 }
 
 /*Ending of Landing Page*/
