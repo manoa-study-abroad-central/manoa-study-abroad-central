@@ -24,13 +24,18 @@ const PostAdmin = ({ post, collection, comments, cc }) => {
       <Row>
         <Col>
           <Card className="w-100">
-            <Card.Header as="h4">{post.title}</Card.Header>
+            <Card.Header as="h4">
+              {post.title}
+            </Card.Header>
             <Card.Body>
               <Row>
                 <Col md={2}>
                   {/* eslint-disable-next-line max-len */}
                   <Image src="https://pbs.twimg.com/media/FtsxswzaUAAZXJj.jpg:large" width="134px" />
                   <Card.Text className="ms-4">By {post.name}</Card.Text>
+                  <Card.Text className="pt-4"><strong>Owner:</strong></Card.Text>
+                  <Card.Text className="pl-1">{post.owner}</Card.Text>
+                  <Link to={`/edit/${post._id}`}>Edit Post</Link>
                 </Col>
                 <Col md={10}>
                   <Card.Text><strong>Program:</strong> {post.program}</Card.Text>
@@ -50,15 +55,15 @@ const PostAdmin = ({ post, collection, comments, cc }) => {
                       {comments.map((comment) => <div><Comment key={comment._id} comment={comment} /><Button variant="danger" id="white" onClick={() => removeComment(comment._id)}>Remove Comment</Button> </div>)}
                     </ListGroupItem>
                   </ListGroup>
-                  <Card.Text><strong>Owner:</strong> {post.owner}</Card.Text>
-                  <Button variant="danger" id="white" onClick={() => removeItem(post._id)}>Remove Post</Button>
                 </Col>
               </Row>
-              <Row className="justify-content-end">
-                <Link to={`/edit/${post._id}`}>Edit</Link>
+              <Row className="justify-content-end mt-5">
                 <Button variant="warning" onClick={() => toggleFlag(post._id)}>
                   {post.isFlagged ? 'Unflag' : 'Flag'}
                 </Button>
+              </Row>
+              <Row className="justify-content-end mt-2">
+                <Button variant="danger" id="white" onClick={() => removeItem(post._id)}>Remove Post</Button>
               </Row>
             </Card.Body>
           </Card>

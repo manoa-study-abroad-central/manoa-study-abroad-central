@@ -32,7 +32,7 @@ const ListPostUser = () => {
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">
-            <h1>User Posts</h1>
+            <h2>User Posts</h2>
           </Col>
           <Row>
             {posts.map((post) => (<Row key={post._id}><PostUser post={post} collection={Posts.collection} comments={comments.filter(comment => (comment.postId === post._id))} /></Row>))}
