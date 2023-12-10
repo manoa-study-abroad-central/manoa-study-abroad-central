@@ -35,7 +35,7 @@ const ListPostUser = () => {
             <h1 id="page-title">Recent Posts</h1>
           </Col>
           <Row>
-            {posts.map((post) => (<Row id="post-collection" key={post._id}><PostUser post={post} collection={Posts.collection} /></Row>))}
+            {posts.map((post) => (<Row key={post._id}><PostUser post={post} collection={Posts.collection} comments={comments.filter(comment => (comment.postId === post._id))} /></Row>))}
           </Row>
         </Col>
       </Row>
