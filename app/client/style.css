@@ -4,19 +4,30 @@
 /* Set up some CSS variables to theme the application. */
 :root {
   --matr-navbar-bg: #085927; /* Your chosen green color */
+  --matr-navbar-bg-rgb:  8, 89, 39; /* Corrected RGB equivalent of your chosen green color */
   --matr-navbar-text-color: white; /* White color for text */
+  --matr-navbar-hightlight-text: rgb(70, 198, 186);
 }
 
 /* Change bootstrap variable values. */
 body {
   --bs-dark: var(--matr-navbar-bg);
-  --bs-dark-rgb: 8, 89, 39; /* Corrected RGB equivalent of your chosen green color */
+  --bs-dark-rgb: var(--matr-navbar-bg-rgb); /* Corrected RGB equivalent of your chosen green color */
+  background-color: rgb(70, 198, 186) !important;
+  color: white !important;
 }
+
+body .navbar {
+  --bs-navbar-active-color: var(--matr-navbar-hightlight-text);
+  --bs-navbar-brand-hover-color: var(--matr-navbar-hightlight-text);
+  --bs-navbar-hover-color: var(--matr-navbar-hightlight-text);
+}
+
 
 /* Style the navbar and dropdown items */
 .bg-dark, .bg-dark a, .bg-dark a.dropdown-item {
   background-color: var(--matr-navbar-bg) !important; /* Your chosen green color */
-  color: var(--matr-navbar-text-color) !important; /* White text */
+  color: var(--matr-navbar-text-color); /* White text */
 }
 
 /* Set the alert background on the signin and signup pages. */
@@ -33,12 +44,23 @@ body {
   padding-bottom: 20px;
 }
 
+h1, h2 {
+  color: white !important;
+  font-family: Garamond !important;
+  font-weight: bolder !important;
+}
+
+h2 {
+  font-size: 35px !important;
+}
+
 /*Landing Page*/
 
 #landing-page {
   background-color: rgb(70, 198, 186);
   /*cities, top right cloud, top left cloud, bottom right cloud, hot air balloon, wave behind cities*/
-  background-image: url("/images/cities.png"), url("/images/top-right-cloud.png"), url("/images/top-left-cloud.png"), url("/images/bottom-right-cloud.png"), url("/images/bottom-left-cloud.png"), url("/images/hot-air-balloon.png"), url("/images/wave.png");
+  background-image: url("/images/cities.png"), url("/images/top-right-cloud.png"), url("/images/top-left-cloud.png"), url("/images/bottom-right-cloud.png"), url("/images/bottom-left-cloud.png"), url("/images/hot-air-balloon.png"),
+  url("app/public/images/wave.png");
   background-size: 675px 500px, 450px 350px, 550px 250px, 525px 250px, 525px 250px, 425px 375px, 875px 875px; /*width height */
   background-position: top 260px right 85px, top -10px right -10px, top -20px left -10px, bottom -20px right -25px, bottom -20px left -10px, top 700px left 30px, top 105px right 0px;
   background-repeat: no-repeat;
@@ -150,11 +172,18 @@ body {
 
 /*User Home Page*/
 #homepage {
+  /*background-color: rgb(70, 198, 186);
+  /*cities, top right cloud, top left cloud, bottom right cloud, hot air balloon, wave behind cities*/
+  /*background-image: url("/images/top-right-cloud.png"), url("/images/top-left-cloud.png"), url("/images/bottom-right-cloud.png"), url("/images/bottom-left-cloud.png"), url("/images/wave.png");
+  background-size: 450px 350px, 550px 250px, 525px 250px, 525px 250px, 950px 950px; /*width height */
+  /*background-position: top -10px right -10px, top -20px left -10px, bottom -20px right -25px, bottom -20px left -10px, top 380px right 300px;
+  background-repeat: no-repeat;*/
+
   background-color: rgb(70, 198, 186);
   /*cities, top right cloud, top left cloud, bottom right cloud, hot air balloon, wave behind cities*/
   background-image: url("/images/cities.png"), url("/images/top-right-cloud.png"), url("/images/top-left-cloud.png"), url("/images/bottom-right-cloud.png"), url("/images/bottom-left-cloud.png"), url("/images/hot-air-balloon.png"), url("/images/wave.png");
   background-size: 675px 500px, 450px 350px, 550px 250px, 525px 250px, 525px 250px, 425px 375px, 875px 875px; /*width height */
-  background-position: top 240px right 85px, top -10px right -10px, top -20px left -10px, bottom -20px right -25px, bottom -20px left -10px, top 620px left 30px, top 85px right 0px;
+  background-position: top 260px right 85px, top -10px right -10px, top -20px left -10px, bottom -20px right -25px, bottom -20px left -10px, top 650px left 30px, top 105px right 0px;
   background-repeat: no-repeat;
 }
 
@@ -168,7 +197,7 @@ body {
 
 #welcome-description { /*Welcome description*/
   text-align: center;
-  padding-top: 70px;
+  padding-top: 10px;
   padding-bottom: 80px;
   margin-left: 70px;
   color: white;
@@ -178,6 +207,15 @@ body {
 }
 
 /*Ending of Landing Page*/
+
+#search-programs-button { /*Search button on program search page */
+  border-color: black;
+  border-width: 2px;
+  --bs-navbar-active-color: var(--matr-navbar-hightlight-text);
+  --bs-btn-hover-bg: rgb(70, 198, 186);
+  font-weight: bold;
+  font-size: 18px;
+}
 
 footer, footer a {
   background-color: var(--matr-navbar-bg); /* Your chosen green color */

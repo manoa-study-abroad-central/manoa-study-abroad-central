@@ -56,32 +56,33 @@ const Programs = () => {
   return (
     <Container id="programs-page" className="py-3">
       <Row className="justify-content-center">
-        <Col xs={12} md={4}>
-          <h2 className="text-center" style={{ fontFamily: 'Roboto', fontWeight: '500', fontSize: '35px' }}>Program Selection Page</h2>
-          <Card style={{ borderRadius: '40px', borderWidth: '3px', borderColor: '#000', width: '425px' }}>
-            <Card.Body>
-              <h3 className="text-center" style={{ fontWeight: 'bold' }}>Program Selection</h3>
-              <hr />
-              <h4 style={{ paddingTop: '15px' }}>Program or Country/Region</h4>
-              <select id="program-type-select" style={{ width: '375px', height: '40px' }} onChange={changeSelectionOption}>
-                <option>Select</option>
-                <option>Program</option>
-                <option>Country/Region</option>
-              </select>
-              <div style={{ paddingBottom: '60px' }} />
-              <h4>{ title }</h4>
-              <select style={{ width: '375px', height: '40px' }} value={optionSelected} onChange={handleOptionChange}>                {
-                options
-              }
-              </select>
-              <div style={{ paddingBottom: '40px' }} />
-              <div className="d-flex justify-content-center">
-                <button id="search-programs-button" type="submit" className="btn mt-2" style={{ backgroundColor: 'white', color: 'black', borderColor: 'black', borderWidth: '3px', fontWeight: 'bold' }} onClick={handleSearch}>
-                  Search
-                </button>
-              </div>
-            </Card.Body>
-          </Card>
+        <Col>
+          <h2 className="text-center">Program Search</h2>
+          <center>
+            <Card style={{ width: '500px', height: '400px' }}>
+              <Card.Body>
+                <p style={{ paddingTop: '10px', paddingBottom: '10px', fontFamily: 'sans-serif' }}>Find information by program or country/region.</p>
+                <h4 style={{ fontFamily: 'sans-serif' }}>Program or Country/Region</h4>
+                <select id="program-type-select" style={{ width: '450px', height: '40px' }} onChange={changeSelectionOption}>
+                  <option>Select</option>
+                  <option>Program</option>
+                  <option>Country/Region</option>
+                </select>
+                <div style={{ paddingBottom: '50px' }} />
+                <h4>{title}</h4>
+                <select style={{ width: '450px', height: '40px' }} value={optionSelected} onChange={handleOptionChange}>                {
+                  options
+                }
+                </select>
+                <div style={{ paddingBottom: '40px' }} />
+                <div className="d-flex justify-content-center">
+                  <button id="search-programs-button" type="submit" className="btn mt-2" onClick={handleSearch}>
+                    Search
+                  </button>
+                </div>
+              </Card.Body>
+            </Card>
+          </center>
         </Col>
       </Row>
     </Container>

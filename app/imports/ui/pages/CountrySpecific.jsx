@@ -27,15 +27,15 @@ const CountrySpecific = () => {
 
   return (
     <div>
-      <h1>{countryName} Posts</h1>
+      <h1 style={{ paddingTop: '20px', paddingBottom: '20px' }}><center>{countryName}</center></h1>
       {posts.map((post) => (
-        <div key={post._id} style={{ marginBottom: '20px', padding: '10px' }}>
-          {index !== 0 && <hr style={{ borderTop: '3px solid #aaa', marginTop: '20px', marginBottom: '20px' }} />}
+        <div key={post._id} style={{ marginBottom: '20px', padding: '10px', backgroundColor: 'white', color: 'black' }}>
           <h3 style={{ fontSize: '1.5em' }}>Title: <span style={{ fontWeight: 'normal', fontSize: '1em' }}> {post.title }</span></h3>
           <h3 style={{ fontSize: '1.5em' }}>Program: <span style={{ fontWeight: 'normal', fontSize: '1em' }}>{post.program}</span></h3>
           <h3 style={{ fontSize: '1.5em' }}>Country/Region: <span style={{ fontWeight: 'normal', fontSize: '1em' }}> {post.countryRegion}</span></h3>
           <h3 style={{ fontSize: '1.5em' }}>By <span style={{ fontWeight: 'normal', fontSize: '1em' }}>{post.name }</span></h3>
           <p>{post.description}</p>
+          {index !== 0 && <hr style={{ borderTop: '3px solid #aaa', marginTop: '20px', marginBottom: '20px' }} />}
         </div>
       ))}
     </div>

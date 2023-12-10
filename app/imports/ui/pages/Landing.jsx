@@ -54,7 +54,7 @@ const Landing = () => (
           <Container className="d-flex flex-column align-items-center">
             <div id="features-icons"><Building /></div>
             <center><h3 id="logo-heading" style={{ paddingTop: '15px' }}><strong>View Partner Schools</strong></h3>
-              <p id="features-desc">View information about various partner schools</p>
+              <p id="features-desc">View information about various partner universities</p>
             </center>
           </Container>
         </Col>

@@ -29,7 +29,7 @@ const ListPrograms = () => {
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">
-            <h2>List Programs</h2>
+            <h2 id="page-title">List Programs</h2>
           </Col>
           <Table striped bordered hover>
             <thead>

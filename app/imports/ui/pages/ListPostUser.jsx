@@ -28,10 +28,10 @@ const ListPostUser = () => {
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">
-            <h1>User Posts</h1>
+            <h1 id="page-title">Recent Posts</h1>
           </Col>
           <Row>
-            {posts.map((post) => (<Row key={post._id}><PostUser post={post} collection={Posts.collection} /></Row>))}
+            {posts.map((post) => (<Row id="post-collection" key={post._id}><PostUser post={post} collection={Posts.collection} /></Row>))}
           </Row>
         </Col>
       </Row>

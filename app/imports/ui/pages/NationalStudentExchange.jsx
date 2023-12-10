@@ -20,7 +20,18 @@ const NationalStudentExchange = () => (
     <Row className="mt-4">
       <Col className="text-left">
         {/* eslint-disable-next-line max-len */}
-        <a href="https://manoa.hawaii.edu/nse/home/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem', color: 'green', textDecoration: 'none', fontWeight: 'bold' }}><span style={{ fontSize: '2rem', fontWeight: 'bold' }}>→</span>Visit National Student Exchange</a>
+        <a href="https://nse.org/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem', color: 'green', textDecoration: 'none', fontWeight: 'bold' }}>
+          <span style={{ fontSize: '2rem', fontWeight: 'bold' }}>→ </span>
+          Visit National Student Exchange
+        </a>
+      </Col>
+    </Row>
+    <Row className="mt-4">
+      <Col className="text-left">
+        <a href="https://nse.org/exchange/eligibility/?z=1#homeinfo" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem', color: 'green', textDecoration: 'none', fontWeight: 'bold' }}>
+          <span style={{ fontSize: '2rem', fontWeight: 'bold' }}>→ </span>
+          Application Requirements
+        </a>
       </Col>
     </Row>
   </Container>
