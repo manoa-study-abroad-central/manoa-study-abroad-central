@@ -30,6 +30,7 @@ import EditProgram from '../pages/EditProgram';
 import ListProgramsAdmin from '../pages/ListProgramsAdmin';
 import AddProgramAdmin from '../pages/AddProgramAdmin';
 import NavBarSelection from '../components/NavBarSelection';
+import HomePage from '../pages/HomePage';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -48,7 +49,8 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signout" element={<SignOut />} />
-          <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
+          <Route path="/" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
+          <Route path="/home" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
           <Route path="/list" element={<ProtectedRoute><ListPostUser /></ProtectedRoute>} />
           <Route path="/listStuff" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/Programs" element={<ProtectedRoute><Programs /></ProtectedRoute>} />

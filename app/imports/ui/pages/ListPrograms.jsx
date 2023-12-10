@@ -30,7 +30,7 @@ const ListPrograms = () => {
       <Row className="justify-content-center">
         <Col md={7}>
           <Col className="text-center">
-            <h2>List of Study Abroad Programs</h2>
+            <h2 id="page-title">List of Study Abroad Programs</h2>
           </Col>
           <Col className="justify-content-center">
             {programs.map((program) => (<Col key={program._id}><ProgramItem program={program} /></Col>))}
@@ -46,7 +46,7 @@ const ListPrograms = () => {
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">
-            <h2>List of Study Abroad Programs</h2>
+            <h2 id="page-title">List of Study Abroad Programs</h2>
           </Col>
           <Table striped bordered hover>
             <thead>

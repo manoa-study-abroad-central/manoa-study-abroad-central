@@ -1,27 +1,30 @@
 import React from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { JournalBookmark, ChatLeftQuoteFill, AirplaneFill, Building } from 'react-bootstrap-icons';
-import LandingNavBar from '../components/LandingNavBar';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
-  <div id="landing-page">
+  <div id="homepage">
     <Container fluid>
-      <LandingNavBar />
       <Row>
-        <Col xs={5} id="landing-description">
-          <h1 style={{ fontSize: '60px' }}><strong>MANOA STUDY ABROAD CENTRAL</strong></h1>
-          Manoa Study Abroad Central is a digital platform dedicated to simplifying the process of choosing a study abroad or exchange program
-          at UH Manoa. Since the different programs offer various types of experiences, it can be hard for students to determine which study
-          abroad program is best for their wants and needs. This site aims to clarify program details and provide clear comparisons to assist
-          students in making informed decisions about their international educational experiences.
+        <h1 id="welcome" style={{ paddingTop: '100px' }}><strong>WELCOME TO</strong></h1>
+        <h1 id="welcome" style={{ paddingBottom: '70px' }}><strong>MANOA STUDY ABROAD CENTRAL</strong></h1>
+      </Row>
+      <Row>
+        <Col xs={5} id="welcome-description">
+          <p>Manoa Study Abroad Central is dedicated to simplifying the process of choosing a study abroad program
+            at UH Manoa by clarifying program details and providing clear comparisons between programs and partner universities.
+          </p>
+          <p>To get started, share your exchange experience, read testimonies from previous or current study abroad students, view
+            different study abroad programs, or explore various partner universities. The world is your oyster!
+          </p>
         </Col>
       </Row>
-      {/* "Features" */}
+      {/* "Get Started" */}
       <Row>
         <Col>
           {/* Features and descriptions */}
-          <h1 id="landing-title" style={{ paddingTop: '150px' }}>FEATURES</h1>
+          <h1 id="landing-title" style={{ paddingTop: '150px' }}>GET STARTED</h1>
         </Col>
       </Row>
       {/* Add Posts, Testimonies, Study Abroad Programs, Partner Schools */}
@@ -29,7 +32,7 @@ const Landing = () => (
         <Col md={3}>
           <Container className="d-flex flex-column align-items-center">
             <div id="features-icons"><JournalBookmark /></div>
-            <center><h3 id="logo-heading" style={{ paddingTop: '15px' }}><strong>Add Posts</strong></h3>
+            <center><a style={{ color: 'white' }} href="/add-post"><h3 id="logo-heading" style={{ paddingTop: '15px' }}><strong>Add a Post</strong></h3></a>
               <p id="features-desc">Add a post about your study abroad experience</p>
             </center>
           </Container>
@@ -37,7 +40,7 @@ const Landing = () => (
         <Col md={3}>
           <Container className="d-flex flex-column align-items-center">
             <div id="features-icons"><ChatLeftQuoteFill /></div>
-            <center><h3 id="logo-heading" style={{ paddingTop: '15px' }}><strong>Testimonials</strong></h3>
+            <center><a style={{ color: 'white' }} href="/list"><h3 id="logo-heading" style={{ paddingTop: '15px' }}><strong>Testimonials</strong></h3></a>
               <p id="features-desc">Read personal experiences from previous study abroad students</p>
             </center>
           </Container>
@@ -45,7 +48,7 @@ const Landing = () => (
         <Col md={3}>
           <Container className="d-flex flex-column align-items-center">
             <div id="features-icons"><AirplaneFill /></div>
-            <center><h3 id="logo-heading" style={{ paddingTop: '15px' }}><strong>Discover Study Abraod Programs</strong></h3>
+            <center><a style={{ color: 'white' }} href="/programs"><h3 id="logo-heading" style={{ paddingTop: '15px' }}><strong>Study Abroad Programs</strong></h3></a>
               <p id="features-desc">Learn more about the different study abroad programs offered at UH Manoa</p>
             </center>
           </Container>
@@ -53,7 +56,7 @@ const Landing = () => (
         <Col md={3}>
           <Container className="d-flex flex-column align-items-center">
             <div id="features-icons"><Building /></div>
-            <center><h3 id="logo-heading" style={{ paddingTop: '15px' }}><strong>View Partner Schools</strong></h3>
+            <center><a style={{ color: 'white' }} href="/ListPrograms"><h3 id="logo-heading" style={{ paddingTop: '15px' }}><strong>View Partner Schools</strong></h3></a>
               <p id="features-desc">View information about various partner universities</p>
             </center>
           </Container>
@@ -128,7 +131,7 @@ const Landing = () => (
             </Container>
           </Row>
         </Col>
-        <a id="landing-title-join" href="/signup">JOIN NOW TO LEARN MORE!</a>
+        <div style={{ paddingBottom: '150px' }} />
       </Row>
     </Container>
   </div>
