@@ -70,7 +70,7 @@ const Programs = () => {
                 </select>
                 <div style={{ paddingBottom: '50px' }} />
                 <h4>{title}</h4>
-                <select style={{ width: '450px', height: '40px' }} value={optionSelected} onChange={handleOptionChange}>                {
+                <select id="program-selection-select" style={{ width: '450px', height: '40px' }} value={optionSelected} onChange={handleOptionChange}>                {
                   options
                 }
                 </select>

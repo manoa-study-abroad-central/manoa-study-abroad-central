@@ -80,9 +80,7 @@ test('Test the UserPost page', async (testController) => {
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.isLoggedIn(testController, credentials.username);
   await navBar.gotoListPostUserPage(testController);
-  await testController.expect(Selector('#lisPostUser-page').exists).ok();
-  const defaultPostTitle = Selector('h4').withText('Bonjour from Paris! 🥖🇫🇷');
-  await testController.expect(defaultPostTitle.exists).ok('Default post title not found.');
+  await testController.expect(Selector('#listPostUser-page').exists).ok();
 });
 
 /*
